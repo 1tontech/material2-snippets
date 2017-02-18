@@ -1,6 +1,7 @@
 intellij/src/main/resources
 vscode/package.json
 vscode/snippets.json
+*.vsix
 build/
 .gradle/
 .idea/

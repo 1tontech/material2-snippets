@@ -40,11 +40,11 @@ class SnippetGenerator {
         def codepointsRowsAsText = new File("${snippetsPath}/material/codepoints").text
         def codepoints = []
         codepointsRowsAsText.eachLine {
-            codepoints << "\"${it.split(/\s/)[0]}\""
+            codepoints << "${it.split(/\s/)[0]}"
         }
 
         codepoints.forEach({ iconStr ->
-            String triggerPattern = "^${iconStr}"
+            String triggerPattern = "mi-${iconStr}"
             String templateStr = "${iconStr}\$0"
             String helpMsg = iconStr
 

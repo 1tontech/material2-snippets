@@ -1,5 +1,5 @@
 <idea-plugin version="2" url="https://github.com/1tontech/material2-intellij">
-    <id>in.1ton.contrib.plugin.angular.material</id>
+    <id>in.oneton.contrib.plugin.angular.material</id>
     <name>Angular material design v2, Teradata covalent v1, Angular flex layout v1 &amp; Material icon snippets</name>
     <version>@@@VERSION@@@</version>
     <vendor url="http://github.com/1tontech">1Ton Technologies</vendor>
