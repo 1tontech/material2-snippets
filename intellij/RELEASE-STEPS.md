@@ -3,6 +3,6 @@
 - `./gradlew clean :intellij:regenerate` will regenerate `build.gradle`, `plugin.xml`, `material2.xml`, `teradata-covalent.xml` & `README.md`
 - `git add .` will stage all local changes for commit
 - `git commit -m <Changes>` will commit to local git repo
-- `git tag -a <version> -m "<Release notes>"` will create tag with the latest version
-- `git push && git push origin <version>` will push both the code & the tags to github 
+- `git tag -a intellij-<version> -m "<Release notes>"` will create tag with the latest version
+- `git push && git push origin intellij-<version>` will push both the code & the tags to github
 - `./gradlew :intellij:clean :intellij:publishPlugin` will publish to jetbrains plugin repo

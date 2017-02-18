@@ -41,7 +41,7 @@ Here are the conventions that will make it easy to lookup templates
 
 The detailed list of supported template triggers are listed [below](#documentation)
 
-Feel free to let me know what else you want added via the [issues](https://github.com/1tontech/material2-intellij/issues)
+Feel free to let me know what else you want added via the [issues](https://github.com/1tontech/material2-snippets/issues)
 
 Suggestions, feedback and other comments welcome via [@1tontech](https://twitter.com/1tontech) on Twitter.
 

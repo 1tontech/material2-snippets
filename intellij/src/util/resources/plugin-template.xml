@@ -1,4 +1,4 @@
-<idea-plugin version="2" url="https://github.com/1tontech/material2-intellij">
+<idea-plugin version="2" url="https://github.com/1tontech/material2-snippets">
     <id>in.oneton.contrib.plugin.angular.material</id>
     <name>Angular material design v2, Teradata covalent v1, Angular flex layout v1 &amp; Material icon snippets</name>
     <version>@@@VERSION@@@</version>
@@ -6,9 +6,9 @@
 
     <description><![CDATA[
       <h2>Angular material v2, Teradata covalent v1, Angular flex layout v1 & Material icon live templates</h2>
-      <img src="https://raw.githubusercontent.com/1tontech/material2-snippets/@@@VERSION@@@/help.gif"/>
+      <img src="https://raw.githubusercontent.com/1tontech/material2-snippets/intellij-@@@VERSION@@@/help.gif"/>
       <br />
-      <p>Documentation can be found <a href="https://github.com/1tontech/material2-snippets/tree/@@@VERSION@@@">here</a></p>
+      <p>Documentation can be found <a href="https://github.com/1tontech/material2-snippets/tree/intellij-@@@VERSION@@@">here</a></p>
       <br />
       <p>Have a problem, raise an issue <a href="https://github.com/1tontech/material2-snippets/issues">here</a></p>
       <br />
