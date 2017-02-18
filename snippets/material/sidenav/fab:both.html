@@ -1,0 +1,16 @@
+<md-sidenav-container>
+    <md-sidenav mode="${2:over|side|push}" align="start" ${3:opened}>
+        ${1:Sidenav content}
+    </md-sidenav>
+    <md-sidenav mode="${5:over|side|push}" align="end" ${6:opened}>
+        ${4:End sidenav content}
+    </md-sidenav>
+    <button md-fab (click)="${9:onClick}">
+        <md-icon class="${8:md-18|md-24|md-36|md-48}">${7:ligature}</md-icon>
+    </button>
+    <!--
+    FAB should be placed with absolute positioning in the container via css
+    -->
+    <!-- Body -->
+    $END$
+</md-sidenav-container>

@@ -1,0 +1,5 @@
+<md-input-container>
+    <input mdInput name="${1:componentProperty}" [(ngModel)]="${1:componentProperty}" type="${2:text|email|number|password|search|month|tel|time|url|date|week|datetime-local}" ${7:required}
+           placeholder="$3" #${4:templateVariable} maxLength="${5:50}" [floatPlaceholder]="${6:auto|always|never}">
+    <md-hint align="${8:start|end}">{{${4:templateVariable}.value.length}} / ${5:50}</md-hint>
+</md-input-container>$END$

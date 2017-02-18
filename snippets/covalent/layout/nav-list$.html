@@ -1,0 +1,12 @@
+<td-layout-nav-list #${1:navList} sidenavTitle="${2:MyApp}" logo="${3:Logo}" icon="${4:Will override logo icon}" [opened]="${5:media.registerQuery('gt-sm') | async}" [mode]="${6:(media.registerQuery('gt-sm') | async) ? 'side' : 'over'}" [sidenavWidth]="${7:(media.registerQuery('gt-xs') | async) ? '350px' : '100%'}">
+    <div td-sidenav-toolbar-content (click)="${8:!media.query('gt-sm') && ${1:navList}.close()}">
+        ${9:Sidenav toolbar content}
+    </div>
+    <md-nav-list td-sidenav-content>
+        ${10:Sidenav content}
+    </md-nav-list>
+    <div td-toolbar-content>
+        ${11:Toolbar content}
+    </div>
+    ${12:Body}
+</td-layout-nav-list>$END$

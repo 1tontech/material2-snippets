@@ -1,0 +1,34 @@
+<!--
+1. Inject TdLoadingService
+
+2. Start loading
+
+loadingService.register('loadingTemplateRef');
+
+3. Set progress
+
+loadingService.setValue('loadingTemplateRef', value);
+
+4. Stop loading
+
+loadingService.resolve('loadingTemplateRef');
+
+For full screen, you chose one of the following
+
+a. To see default full screen circular, indeterminate primary colored full screen loader, use
+
+loadingService.register() to start & loadingService.resolve() to stop.
+
+b. For custom full screen loader
+
+ i. Register a custom loader with name
+
+    this._loadingService.create({
+      name: 'customerLoader',
+      type: LoadingType.Circular,
+      mode: LoadingMode.Indeterminate,
+      color: 'accent'
+    });
+
+ ii. loadingService.register('customerLoader') to start & loadingService.resolve('customerLoader') to stop
+-->

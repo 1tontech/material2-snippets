@@ -1,0 +1,8 @@
+<button md-button [mdMenuTriggerFor]="${1:menuRef}">
+    ${2:Trigger}
+</button>
+
+<md-menu #${1:menuRef}="mdMenu" x-position="${3:after|before}" y-position="${4:below|above}" [overlapTrigger]="${5:false|true}">
+    <button md-menu-item (click)="$7">$6</button>$END$
+</md-menu>
+

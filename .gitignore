@@ -1,0 +1,12 @@
+intellij/src/main/resources
+vscode/package.json
+vscode/snippets.json
+build/
+.gradle/
+.idea/
+target/
+.project
+.classpath
+/bootstrap.xml
+/font-awesome.xml
+*.*~

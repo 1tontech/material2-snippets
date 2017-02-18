@@ -1,0 +1,9 @@
+<td-data-table
+        [columns]="${1:columnMetadata}"
+        [data]="${2:rows}"
+        [(ngModel)]="${3:selectedRows}"
+        [selectable]="${4:true|false}"
+        [multiple]="${5:true|false}"
+        (rowSelect)="${6:onRowSelect}($event)"
+        (selectAll)="${7:onAllSelectOrDeselect}($event)">
+</td-data-table>$END$

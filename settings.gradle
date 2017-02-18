@@ -1,0 +1,5 @@
+rootProject.name = 'material2-snippets'
+include 'snippets'
+include 'common'
+include 'intellij'
+include 'vscode'

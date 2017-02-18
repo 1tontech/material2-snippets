@@ -1,0 +1,9 @@
+<button md-button [mdMenuTriggerFor]="${1:menuRef}">
+    ${2:Trigger}
+</button>
+
+<md-menu #${1:menuRef}="mdMenu">
+    <a md-menu-item href="${4:item}$6" *ngFor="let ${4:item} of ${3:items}">
+        ${4:item}$5
+    </a>
+</md-menu>$END$

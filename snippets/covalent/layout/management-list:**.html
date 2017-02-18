@@ -1,0 +1,23 @@
+<td-layout-nav sidenavTitle="${1:MyApp}" logo="${2:assets:logo}" icon="${3:ligature}" color="${4:primary|accent|warn}">
+    <div td-toolbar-content>
+        ${5:Toolbar content}
+    </div>
+    <td-layout-manage-list opened="${6:true|false}" mode="${7:side|over|push}" sidenavWidth="${8:257px}">
+        <md-toolbar td-sidenav-content>
+            ${9:Inner sidenav toolbar}
+        </md-toolbar>
+        <md-nav-list td-sidenav-content>
+            ${10:Inner sidenav content}
+        </md-nav-list>
+        <div td-toolbar-content>
+            ${11:Inner toolbar for body}
+        </div>
+        ${12:Body}
+        <td-layout-footer-inner>
+            ${13:Footer within body}
+        </td-layout-footer-inner>
+    </td-layout-manage-list>
+    <td-layout-footer>
+        ${14:Global fixed footer}
+    </td-layout-footer>
+</td-layout-nav>$END$

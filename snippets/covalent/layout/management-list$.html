@@ -1,0 +1,18 @@
+<td-layout-nav sidenavTitle="${1:MyApp}" logo="${2:assets:logo}" icon="${3:ligature}">
+    <div td-toolbar-content>
+        ${4:Toolbar content}
+    </div>
+    <td-layout-manage-list #{5:ref} [opened]="${6:media.registerQuery('gt-sm') | async}"
+                           [mode]="${7:(media.registerQuery('gt-sm') | async) ? 'side' :  'over'}"
+                           [sidenavWidth]="${8:(media.registerQuery('gt-xs') | async) ? '257px' : '100%'}">
+        <md-toolbar td-sidenav-content (click)="${9:!media.query('gt-sm') && ${5:ref}.close()}">
+            ${10:Inner sidenav toolbar}
+        </md-toolbar>
+        <md-nav-list td-sidenav-content>
+            ${11:Inner sidenav content}
+        </md-nav-list>
+        <div td-toolbar-content>
+            ${12:Inner toolbar for body}
+        </div>
+        ${13:Body}
+</td-layout-nav>$END$

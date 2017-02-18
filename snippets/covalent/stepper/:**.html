@@ -1,0 +1,14 @@
+<td-steps (stepChange)="${2:onStepChange}" mode="${1:horizontal|vertical}">
+    <td-step #sublabel="${4:Step subtitle}" active="${5:true|false}" state="${6:none|required|complete}">
+        <template td-step-label>
+            ${3:Step title}
+        </template>
+        ${7:body}
+        <template td-step-actions>
+            ${8:actions}
+        </template>
+        <template td-step-summary>
+            ${9:Summary}
+        </template>
+    </td-step>$END$
+</td-steps>

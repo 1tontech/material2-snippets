@@ -1,0 +1,19 @@
+<md-card>
+    <md-card-title-group>
+        <md-card-title>${1:Title}</md-card-title>
+        <md-card-subtitle>${2:Subtitle}</md-card-subtitle>
+        <img ${4:md-card-sm-image|md-card-md-image|md-card-lg-image} src="${3:Side image}">
+    </md-card-title-group>
+    <img md-card-image src="${5:Card wide image source}">
+    <md-card-content>
+        ${6:Text content}
+    </md-card-content>
+    <md-card-actions align="${7:start|end}">
+        <button md-button (click)="${9:onAction1}">${8:Action1}</button>
+        <button md-button (click)="${11:onAction2}">${10:Action2}</button>
+        $END$
+    </md-card-actions>
+    <md-card-footer>
+        ${12:Footer}
+    </md-card-footer>
+</md-card>

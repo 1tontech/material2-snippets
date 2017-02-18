@@ -1,0 +1,9 @@
+<md-grid-list cols="${1:2}" [rowHeight]="'${2:Specifying 2:1 gives columns that are twice as wide as row}'" [gutterSize]="'${3:1px}'">
+    <md-grid-tile *ngFor="let ${5:tile} of ${4:tiles}" [colspan]="${9:1}" [rowspan]="${10:1}">
+        <md-grid-tile-header>
+            <md-icon md-grid-avatar>${7:ligature}</md-icon>
+            ${8:Header text}
+        </md-grid-tile-header>
+        ${6:Tile content}
+    </md-grid-tile>
+</md-grid-list>$END$

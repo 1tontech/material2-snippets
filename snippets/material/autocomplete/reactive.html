@@ -1,0 +1,10 @@
+<md-input-container>
+    <input mdInput placeholder="${1:placeholder}" [mdAutocomplete]="${6:autocompleteTemplateRefId}"
+           [formControl]="${2:formControlName}" name="${2:formControlName}">
+</md-input-container>
+
+<md-autocomplete #${6:autocompleteTemplateRefId}="mdAutocomplete" [displayWith]="${5:onSelectConvertValueToInputFn}">
+    <md-option *ngFor="let ${4:choice} of ${3:choices} | async" [value]="${4:choice}">
+        ${7:Choice shown in dropdown}
+    </md-option>
+</md-autocomplete>$END$

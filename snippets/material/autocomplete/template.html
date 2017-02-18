@@ -1,0 +1,10 @@
+<md-input-container>
+    <input mdInput placeholder="${1:placeholder}" [mdAutocomplete]="${7:autocompleteTemplateRefId}"
+           name="${2:componentToggleProperty}" [(ngModel)]="${2:componentToggleProperty}" (ngModelChange)="this.${3:choices} = ${5:filterChoices}(${2:componentToggleProperty})">
+</md-input-container>
+
+<md-autocomplete #${7:autocompleteTemplateRefId}="mdAutocomplete" [displayWith]="${6:onSelectConvertValueToInputFn}">
+    <md-option *ngFor="let ${4:choice} of ${3:choices}" [value]="${4:choice}">
+        ${8:Choice shown in dropdown}
+    </md-option>
+</md-autocomplete>$END$

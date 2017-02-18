@@ -1,0 +1,77 @@
+<!--
+
+dialog sample code in ts
+---
+
+1. Get reference to dialog
+constructor(public dialog: MdDialog) {
+}
+
+2. Open the dialog like this
+
+this.dialogRef = this.dialog.open(CustomDialog, this.config);
+
+(or)
+
+this.dialogRef = this.dialog.open(CustomDialog);
+
+(or)
+
+@ViewChild(TemplateRef) template: TemplateRef<any>; // refers to a html <template> element
+this.dialogRef = this.dialog.open(this.template, this.config);
+
+sample dialog config
+---
+
+config: MdDialogConfig = {
+    disableClose: false,
+    width: '',
+    height: '',
+    position: {
+      top: '',
+      bottom: '',
+      left: '',
+      right: ''
+    },
+    data: {
+      message: 'custom message'
+    }
+  }
+
+Receive data in the dialog
+--
+
+export class CustomDialog {
+  constructor(
+    private dialogRef: MdDialogRef<CustomDialog>,
+    @Inject(MD_DIALOG_DATA) public data: any) { }
+}
+
+Send result back to dialog parent from dialog
+--
+
+export class CustomDialog {
+  constructor(
+    private dialogRef: MdDialogRef<CustomDialog>,
+    @Inject(MD_DIALOG_DATA) public data: any) { }
+
+  sendDataToParent() {
+    this.dialogRef.close(dataForParent);
+  }
+}
+
+
+disable body level scrolling by subscribing to dialog event subscription
+---
+
+dialog.afterOpen.subscribe((ref: MdDialogRef<any>) => {
+  if (!doc.body.classList.contains('no-scroll')) {
+    doc.body.classList.add('no-scroll');
+  }
+});
+
+dialog.afterAllClosed.subscribe(() => {
+  doc.body.classList.remove('no-scroll');
+});
+
+-->
