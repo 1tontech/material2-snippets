@@ -7,7 +7,7 @@ import static java.nio.charset.Charset.defaultCharset
 
 class ReadmeGenerator {
 
-    void generate(File saveTo, boolean skipIconSnippets) {
+    void generate(File saveTo, boolean targetsVscode, String version) {
         String snippetsPath = '../snippets'
 
         StringWriter readmeContentWriter = new StringWriter()
@@ -18,7 +18,9 @@ class ReadmeGenerator {
         readmeContent = replacePlaceholderWithSnippets(readmeContent, /@@@GENERATED_COVALENT_SNIPPETS@@@/, getSnippetResources("${snippetsPath}/covalent"), false)
         readmeContent = replacePlaceholderWithSnippets(readmeContent, /@@@GENERATED_FLEX_SNIPPETS@@@/, getSnippetResources("${snippetsPath}/flex-layout"), true)
 
-        if (!skipIconSnippets) {
+        if (!targetsVscode) {
+            readmeContent = readmeContent.replaceAll(/help\.gif/, "https://github.com/1tontech/material2-snippets/raw/vscode-${version}/vscode/help.gif")
+
             def codepointsRowsAsText = new File("${snippetsPath}/material/codepoints").text
             def codepoints = []
             codepointsRowsAsText.eachLine {
