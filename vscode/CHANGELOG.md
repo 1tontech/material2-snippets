@@ -1,3 +1,7 @@
+## Since 0.3.0 (19 Feb 2017):
+
+  - Fixed issue with input floating placeholder
+
 ## Since 0.2.0 (18 Feb 2017):
 
   - Now extension should show gif showing how to use
