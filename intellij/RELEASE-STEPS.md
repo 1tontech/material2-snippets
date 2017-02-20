@@ -5,4 +5,4 @@
 - `git commit -m <Changes>` will commit to local git repo
 - `git tag -a intellij-<version> -m "<Release notes>"` will create tag with the latest version
 - `git push && git push origin intellij-<version>` will push both the code & the tags to github
-- `./gradlew :intellij:clean :intellij:publishPlugin` will publish to jetbrains plugin repo
+- `./gradlew :intellij:clean :intellij:regenerate :intellij:publishPlugin` will publish to jetbrains plugin repo
