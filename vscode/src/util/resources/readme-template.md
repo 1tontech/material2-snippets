@@ -5,6 +5,12 @@ Visual studio code plugin containing Angular material v2, Teradata covalent v1 &
 
 ![Plugin in action](help.gif)
 
+The detailed list of supported template triggers are listed [below](#documentation)
+
+Feel free to let me know what else you want added via the [issues](https://github.com/1tontech/material2-snippets/issues)
+
+Suggestions, feedback and other comments welcome via [@1tontech](https://twitter.com/1tontech) on Twitter.
+
 ## Usage
 
 Create a new HTML document and
@@ -32,12 +38,6 @@ Here are the conventions that will make it easy to lookup templates
 5. `$` => Observable variation
 6. `:**` => maximum variations
 7. `:?` => Help
-
-The detailed list of supported template triggers are listed [below](#documentation)
-
-Feel free to let me know what else you want added via the [issues](https://github.com/1tontech/material2-snippets/issues)
-
-Suggestions, feedback and other comments welcome via [@1tontech](https://twitter.com/1tontech) on Twitter.
 
 ## Installation (in 2 easy steps)
 
