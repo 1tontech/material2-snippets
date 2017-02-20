@@ -3,7 +3,13 @@ Angular material v2, Teradata covalent v1, Angular flex layout v1 & Material ico
 
 Visual studio code plugin containing Angular material v2, Teradata covalent v1 & Angular flex layout v1 snippets. This plugin works in both in the stable & the insiders build
 
-![Plugin in action](https://github.com/1tontech/material2-snippets/raw/vscode-0.5.0/vscode/help.gif)
+![Plugin in action](https://github.com/1tontech/material2-snippets/raw/vscode-0.6.0/vscode/help.gif)
+
+The detailed list of supported template triggers are listed [below](#documentation)
+
+Feel free to let me know what else you want added via the [issues](https://github.com/1tontech/material2-snippets/issues)
+
+Suggestions, feedback and other comments welcome via [@1tontech](https://twitter.com/1tontech) on Twitter.
 
 ## Usage
 
@@ -32,12 +38,6 @@ Here are the conventions that will make it easy to lookup templates
 5. `$` => Observable variation
 6. `:**` => maximum variations
 7. `:?` => Help
-
-The detailed list of supported template triggers are listed [below](#documentation)
-
-Feel free to let me know what else you want added via the [issues](https://github.com/1tontech/material2-snippets/issues)
-
-Suggestions, feedback and other comments welcome via [@1tontech](https://twitter.com/1tontech) on Twitter.
 
 ## Installation (in 2 easy steps)
 
@@ -315,8 +315,8 @@ toolbar-rows:color | Toolbar rows + color variation
 
 Trigger | Description
 --- | ---
-tooltip-_ | Tooltip  snippet
-tooltip-_:** | Tooltip  snippet + more variations
+tooltip-@ | Tooltip attribute directive
+tooltip-@:** | Tooltip attribute directive  + more variations
 
 
 ### Angular flex layout snippets

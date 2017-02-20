@@ -1,3 +1,7 @@
+## Since 0.6.0 (20 Feb 2017):
+
+  - Made tooltip an attribute directive instead of snippet
+
 ## Since 0.5.0 (20 Feb 2017):
 
   - Fixed issue with templates that does not have name such as `button/.html` will also be included as part of templates
