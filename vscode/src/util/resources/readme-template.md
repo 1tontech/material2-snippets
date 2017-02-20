@@ -5,11 +5,41 @@ Visual studio code plugin containing Angular material v2, Teradata covalent v1 &
 
 ![Plugin in action](help.gif)
 
+## Usage
+
+Create a new HTML document and
+
+1. Type `md-` followed by pressing `Ctrl+Space` to see all available angular material design snippets.
+2. Type `td-` followed by pressing `Ctrl+Space` to see all available teradata covalent snippets.
+3. Type `@fx` followed by pressing `Ctrl+Space` to see all available angular flex layout snippets.
+4. Type `mi-` followed by pressing `Ctrl+Space` to see all available material icon snippets.
+
+Here are the conventions that will make it easy to lookup templates
+
+1. If a tag supports multiple children, the template trigger version with `*` implies the template uses dynamic number of children `*ngFor` variation. The `*` comes from `*ngFor`
+2. If a template trigger has `:**` variation, this means this variation contains the maximum number of options for that component. `**` comes from [ant](https://ant.apache.org/manual/dirtasks.html) which matches all the files under folder & sub folders
+3. If a template trigger has `:?` variation, the template contains additional help that helps you completely utilize the existing templates
+4. If a template trigger has `_`(underscore) variation, this is a snippet(partial) that can be added to the component. This exists mainly to avoid creating variations of all permutations for the base component
+5. If a template trigger has `@` variation, this snippet targets the attribute of an html element in your markup. Think of `@` as `html attribute`
+6. If a template trigger has `+` variation, this snippet allows you to specify responsive variation
+7. If a template trigger has `$` variation, this snippet contains the observable variation
+
+## Mind map
+1. `*` => `*ngFor` variation
+2. `@` => Targets html attribute
+3. `_` => Html snippet
+4. `+` => Responsive variations
+5. `$` => Observable variation
+6. `:**` => maximum variations
+7. `:?` => Help
+
+The detailed list of supported template triggers are listed [below](#documentation)
+
 Feel free to let me know what else you want added via the [issues](https://github.com/1tontech/material2-snippets/issues)
 
 Suggestions, feedback and other comments welcome via [@1tontech](https://twitter.com/1tontech) on Twitter.
 
-## Setup (in 2 easy steps)
+## Installation (in 2 easy steps)
 
 1. Install plugin
   1. Press `F1`, paste `ext install angular-material` & then press `enter` (or)
@@ -17,15 +47,6 @@ Suggestions, feedback and other comments welcome via [@1tontech](https://twitter
 2. Reload your editor
 
 You are good to go
-
-## Usage
-
-1. Type `md-` followed by pressing `Ctrl+Space` to see all available angular material design snippets.
-2. Type `td-` followed by pressing `Ctrl+Space` to see all available teradata covalent snippets.
-3. Type `@fx` followed by pressing `Ctrl+Space` to see all available angular flex layout snippets.
-4. Type `mi-` followed by pressing `Ctrl+Space` to see all available material icon snippets.
-
-The detailed list of supported actions are listed below under documentation section
 
 ## Contribution guidelines
 

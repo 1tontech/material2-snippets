@@ -3,13 +3,43 @@ Angular material v2, Teradata covalent v1, Angular flex layout v1 & Material ico
 
 Visual studio code plugin containing Angular material v2, Teradata covalent v1 & Angular flex layout v1 snippets. This plugin works in both in the stable & the insiders build
 
-![Plugin in action](https://github.com/1tontech/material2-snippets/raw/vscode-0.4.0/vscode/help.gif)
+![Plugin in action](https://github.com/1tontech/material2-snippets/raw/vscode-0.5.0/vscode/help.gif)
+
+## Usage
+
+Create a new HTML document and
+
+1. Type `md-` followed by pressing `Ctrl+Space` to see all available angular material design snippets.
+2. Type `td-` followed by pressing `Ctrl+Space` to see all available teradata covalent snippets.
+3. Type `@fx` followed by pressing `Ctrl+Space` to see all available angular flex layout snippets.
+4. Type `mi-` followed by pressing `Ctrl+Space` to see all available material icon snippets.
+
+Here are the conventions that will make it easy to lookup templates
+
+1. If a tag supports multiple children, the template trigger version with `*` implies the template uses dynamic number of children `*ngFor` variation. The `*` comes from `*ngFor`
+2. If a template trigger has `:**` variation, this means this variation contains the maximum number of options for that component. `**` comes from [ant](https://ant.apache.org/manual/dirtasks.html) which matches all the files under folder & sub folders
+3. If a template trigger has `:?` variation, the template contains additional help that helps you completely utilize the existing templates
+4. If a template trigger has `_`(underscore) variation, this is a snippet(partial) that can be added to the component. This exists mainly to avoid creating variations of all permutations for the base component
+5. If a template trigger has `@` variation, this snippet targets the attribute of an html element in your markup. Think of `@` as `html attribute`
+6. If a template trigger has `+` variation, this snippet allows you to specify responsive variation
+7. If a template trigger has `$` variation, this snippet contains the observable variation
+
+## Mind map
+1. `*` => `*ngFor` variation
+2. `@` => Targets html attribute
+3. `_` => Html snippet
+4. `+` => Responsive variations
+5. `$` => Observable variation
+6. `:**` => maximum variations
+7. `:?` => Help
+
+The detailed list of supported template triggers are listed [below](#documentation)
 
 Feel free to let me know what else you want added via the [issues](https://github.com/1tontech/material2-snippets/issues)
 
 Suggestions, feedback and other comments welcome via [@1tontech](https://twitter.com/1tontech) on Twitter.
 
-## Setup (in 2 easy steps)
+## Installation (in 2 easy steps)
 
 1. Install plugin
   1. Press `F1`, paste `ext install angular-material` & then press `enter` (or)
@@ -17,15 +47,6 @@ Suggestions, feedback and other comments welcome via [@1tontech](https://twitter
 2. Reload your editor
 
 You are good to go
-
-## Usage
-
-1. Type `md-` followed by pressing `Ctrl+Space` to see all available angular material design snippets.
-2. Type `td-` followed by pressing `Ctrl+Space` to see all available teradata covalent snippets.
-3. Type `@fx` followed by pressing `Ctrl+Space` to see all available angular flex layout snippets.
-4. Type `mi-` followed by pressing `Ctrl+Space` to see all available material icon snippets.
-
-The detailed list of supported actions are listed below under documentation section
 
 ## Contribution guidelines
 
@@ -56,6 +77,7 @@ autocomplete-template | Autocomplete template
 
 Trigger | Description
 --- | ---
+button-toggle | Button toggle
 button-toggle-group-* | Button toggle group *forEach flavor
 button-toggle-group | Button toggle group
 
@@ -63,6 +85,7 @@ button-toggle-group | Button toggle group
 
 Trigger | Description
 --- | ---
+button | Button
 button:color | Button + color variation
 button-a | Button with link
 button-a:color | Button with link + color variation
@@ -87,6 +110,7 @@ button-raised:color | Button raised + color variation
 
 Trigger | Description
 --- | ---
+card | Card
 card:avatar | Card + avatar variation
 card:title-group | Card:title group
 
@@ -94,6 +118,7 @@ card:title-group | Card:title group
 
 Trigger | Description
 --- | ---
+checkbox | Checkbox
 checkbox:** | Checkbox + more variations
 
 #### Chip
@@ -102,6 +127,7 @@ Trigger | Description
 --- | ---
 chip-* | Chip *forEach flavor
 chip-*:color | Chip *forEach flavor + color variation
+chip | Chip
 chip:color | Chip + color variation
 chip-basic | Chip basic
 
@@ -109,6 +135,7 @@ chip-basic | Chip basic
 
 Trigger | Description
 --- | ---
+dialog | Dialog
 dialog:** | Dialog + more variations
 dialog:? | Dialog help
 
@@ -116,6 +143,7 @@ dialog:? | Dialog help
 
 Trigger | Description
 --- | ---
+divider | Divider
 divider:inset | Divider + inset variation
 
 #### Grid
@@ -145,6 +173,7 @@ grid-ratio:header | Grid ratio + header variation
 
 Trigger | Description
 --- | ---
+icon | Icon
 icon:color | Icon + color variation
 icon-font | Icon font
 icon-svg-set | Icon svg set
@@ -154,6 +183,7 @@ icon-svg | Icon svg
 
 Trigger | Description
 --- | ---
+input | Input
 input:** | Input + more variations
 input:color | Input + color variation
 input-counting | Input counting
@@ -172,6 +202,7 @@ input-textarea:color | Input textarea + color variation
 Trigger | Description
 --- | ---
 list-* | List *forEach flavor
+list | List
 list:** | List + more variations
 list-_avatar | List avatar snippet
 list-_header | List header snippet
@@ -191,6 +222,7 @@ Trigger | Description
 --- | ---
 menu-* | Menu *forEach flavor
 menu-*:** | Menu *forEach flavor + more variations
+menu | Menu
 menu:** | Menu + more variations
 menu:? | Menu help
 menu-a-* | Menu with link *forEach flavor
@@ -218,6 +250,7 @@ progress-spinner-indeterminate | Progress spinner indeterminate
 
 Trigger | Description
 --- | ---
+radio | Radio
 radio-group-* | Radio group *forEach flavor
 radio-group | Radio group
 
@@ -232,21 +265,30 @@ ripple-@disable | Ripple attribute directive disable
 Trigger | Description
 --- | ---
 select-* | Select *forEach flavor
+select | Select
 
 #### Sidenav
 
 Trigger | Description
 --- | ---
+sidenav | Sidenav
 sidenav:** | Sidenav + more variations
 sidenav:both | Sidenav + both variation
 sidenav-fab | Sidenav fab
 sidenav-fab:** | Sidenav fab + more variations
 sidenav-fab:both | Sidenav fab + both variation
 
+#### Slide toggle
+
+Trigger | Description
+--- | ---
+slide-toggle | Slide toggle
+
 #### Slider
 
 Trigger | Description
 --- | ---
+slider | Slider
 slider:** | Slider + more variations
 
 #### Tab
@@ -254,6 +296,7 @@ slider:** | Slider + more variations
 Trigger | Description
 --- | ---
 tab-* | Tab *forEach flavor
+tab | Tab
 tab-nav-* | Tab nav *forEach flavor
 tab-nav | Tab nav
 tab-rich-* | Tab rich *forEach flavor
@@ -263,6 +306,7 @@ tab-rich | Tab rich
 
 Trigger | Description
 --- | ---
+toolbar | Toolbar
 toolbar:color | Toolbar + color variation
 toolbar-rows | Toolbar rows
 toolbar-rows:color | Toolbar rows + color variation
@@ -317,6 +361,7 @@ Trigger | Description
 
 Trigger | Description
 --- | ---
+autocomplete-chip | Autocomplete chip
 autocomplete-chip:** | Autocomplete chip + more variations
 autocomplete-chip-readonly | Autocomplete chip readonly
 
@@ -344,10 +389,17 @@ directive-@media-toggle | Directive attribute directive media toggle
 directive-@media-toggle:** | Directive attribute directive media toggle + more variations
 directive-@toggle | Directive attribute directive toggle
 
+#### Dynamic form
+
+Trigger | Description
+--- | ---
+dynamic-form | Dynamic form
+
 #### Expansion panel
 
 Trigger | Description
 --- | ---
+expansion-panel | Expansion panel
 expansion-panel:** | Expansion panel + more variations
 expansion-panel-richheader | Expansion panel richheader
 expansion-panel-richheader:** | Expansion panel richheader + more variations
@@ -356,21 +408,30 @@ expansion-panel-richheader:** | Expansion panel richheader + more variations
 
 Trigger | Description
 --- | ---
+file-input | File input
 file-input:** | File input + more variations
 
 #### File upload
 
 Trigger | Description
 --- | ---
+file-upload | File upload
 file-upload:** | File upload + more variations
 file-upload:? | File upload help
 file-upload-@drop | File upload attribute directive drop
 file-upload-@select | File upload attribute directive select
 
+#### Json formatter
+
+Trigger | Description
+--- | ---
+json-formatter | Json formatter
+
 #### Layout
 
 Trigger | Description
 --- | ---
+layout | Layout
 layout:** | Layout + more variations
 layout-card | Layout card
 layout-card:** | Layout card + more variations
@@ -399,18 +460,21 @@ loading-indeterminate:** | Loading indeterminate + more variations
 
 Trigger | Description
 --- | ---
+markdown | Markdown
 markdown-dynamic | Markdown dynamic
 
 #### Notification
 
 Trigger | Description
 --- | ---
+notification | Notification
 notification-icon | Notification icon
 
 #### Paging
 
 Trigger | Description
 --- | ---
+paging | Paging
 paging:** | Paging + more variations
 
 #### Pipe
@@ -443,6 +507,7 @@ search-input-trigger | Search input trigger
 
 Trigger | Description
 --- | ---
+stepper | Stepper
 stepper:** | Stepper + more variations
 stepper-_step | Stepper step snippet
 stepper-_step:** | Stepper step snippet + more variations
@@ -451,6 +516,7 @@ stepper-_step:** | Stepper step snippet + more variations
 
 Trigger | Description
 --- | ---
+syntax-highlight | Syntax highlight
 syntax-highlight-dynamic | Syntax highlight dynamic
 
 

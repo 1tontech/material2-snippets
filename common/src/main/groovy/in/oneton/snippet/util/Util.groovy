@@ -12,7 +12,7 @@ final class Util {
 
     static List<File> getSnippetResources(String rootPath) {
         return Files.walk(Paths.get(rootPath))
-                .filter({ path -> path.fileName ==~ /.+.html$/ })
+                .filter({ path -> path.fileName ==~ /.*.html$/ })
                 .sorted()
                 .map({ path -> path.toFile() })
                 .collect(toList())
