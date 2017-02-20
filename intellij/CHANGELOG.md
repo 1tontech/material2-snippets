@@ -1,3 +1,7 @@
+## Since 0.4.0 (20 Feb 2017):
+
+  - Fixed issue with tooltip
+
 ## Since 0.3.0 (19 Feb 2017):
 
   - Fixed issue with input floating placeholder

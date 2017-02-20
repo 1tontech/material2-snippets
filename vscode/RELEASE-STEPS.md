@@ -1,5 +1,5 @@
 - Bump version in `.version` file
-- `./gradlew :vscode:clean :vscode:regenerate` will regenerate `snippets.json`, `README.md` & `package.json`
+- `./gradlew :vscode:clean :vscode:regenerate && cd vscode && vsce package && cd ..` will regenerate `snippets.json`, `README.md` & `package.json`
 - Update `CHANGELOG.md` with release notes
 - `git add .` will stage all local changes for commit
 - `git commit -m <Changes>` will commit to local git repo

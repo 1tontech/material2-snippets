@@ -3,7 +3,7 @@ Angular material v2, Teradata covalent v1, Angular flex layout v1 & Material ico
 
 Visual studio code plugin containing Angular material v2, Teradata covalent v1 & Angular flex layout v1 snippets. This plugin works in both in the stable & the insiders build
 
-![Plugin in action](https://github.com/1tontech/material2-snippets/raw/vscode-0.3.0/vscode/help.gif)
+![Plugin in action](https://github.com/1tontech/material2-snippets/raw/vscode-0.4.0/vscode/help.gif)
 
 Feel free to let me know what else you want added via the [issues](https://github.com/1tontech/material2-snippets/issues)
 

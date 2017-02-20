@@ -1,6 +1,6 @@
 - Bump version in `.version` file
 - Update `CHANGELOG.md` with release notes
-- `./gradlew :intellij:clean :intellij:regenerate` will regenerate `build.gradle`, `plugin.xml`, `material2.xml`, `teradata-covalent.xml` & `README.md`
+- `./gradlew :intellij:clean :intellij:regenerate :intellij:buildPlugin` will regenerate `build.gradle`, `plugin.xml`, `material2.xml`, `teradata-covalent.xml` & `README.md`
 - `git add .` will stage all local changes for commit
 - `git commit -m <Changes>` will commit to local git repo
 - `git tag -a intellij-<version> -m "<Release notes>"` will create tag with the latest version
