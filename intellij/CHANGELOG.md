@@ -1,3 +1,7 @@
+### Since 0.7.0 (7 Mar 2017):
+
+  - Fixed a minor issue with svg set
+
 ### Since 0.6.0 (20 Feb 2017):
 
   - Made tooltip an attribute directive instead of snippet
