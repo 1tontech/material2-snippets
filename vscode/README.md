@@ -1,9 +1,9 @@
-Visual studio code (vscode) plugin/extension containing snippets for Angular Material 2, Teradata Covalent 1 & Angular Flex layout 1 & Material icons
-=====================================================================================================================================================
+Visual studio code (vscode) plugin/extension containing snippets for Angular Material 2, Angular Flex layout 1, Teradata Covalent 1 & Material icons
+=======================================================================================================================================================
 
 This plugin works in both in the stable & the insiders build
 
-![Plugin in action](https://github.com/1tontech/material2-snippets/raw/vscode-0.8.0/vscode/help.gif)
+![Plugin in action](https://github.com/1tontech/material2-snippets/raw/vscode-0.8.1/vscode/help.gif)
 
 The detailed list of supported template triggers are listed [below](#documentation)
 
@@ -15,7 +15,7 @@ Suggestions, feedback and other comments welcome via [@1tontech](https://twitter
 
 Create a new HTML document and
 
-1. Type `md-` followed by pressing `Ctrl+Space` to see all available angular material design snippets.
+1. Type `md-` followed by pressing `Ctrl+Space` to see all available angular material snippets.
 2. Type `td-` followed by pressing `Ctrl+Space` to see all available teradata covalent snippets.
 3. Type `@fx` followed by pressing `Ctrl+Space` to see all available angular flex layout snippets.
 4. Type `mi-` followed by pressing `Ctrl+Space` to see all available material icon snippets.

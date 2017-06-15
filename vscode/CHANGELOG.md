@@ -1,3 +1,7 @@
+### Since 0.8.1 (15 Jun 2017):
+
+  - Non functional changes
+
 ### Since 0.8.0 (15 Jun 2017):
 
   - Added support for reactive form control variation for each input
