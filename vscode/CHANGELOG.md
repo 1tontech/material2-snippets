@@ -1,3 +1,7 @@
+### Since 0.8.2 (15 Jun 2017):
+
+  - Non functional changes
+
 ### Since 0.8.1 (15 Jun 2017):
 
   - Non functional changes

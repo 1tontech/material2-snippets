@@ -3,7 +3,7 @@ Visual studio code (vscode) plugin/extension containing snippets for Angular Mat
 
 This plugin works in both in the stable & the insiders build
 
-![Plugin in action](https://github.com/1tontech/material2-snippets/raw/vscode-0.8.1/vscode/help.gif)
+![Plugin in action](https://github.com/1tontech/material2-snippets/raw/vscode-0.8.2/vscode/help.gif)
 
 The detailed list of supported template triggers are listed [below](#documentation)
 
