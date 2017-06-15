@@ -10,7 +10,7 @@ class RegeneratePlugin {
         String version = readLines(new FileInputStream(new File('.version')), defaultCharset()).get(0)
 
         new SnippetGenerator().generateAll()
-        new ReadmeGenerator().generate(new File('README.md'), false, version)
+        new ReadmeGenerator().generate(new File('README.md'), true, version)
         new PackageJsonGenerator().generate()
     }
 }

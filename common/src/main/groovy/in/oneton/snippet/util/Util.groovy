@@ -52,8 +52,8 @@ final class Util {
         if (description ==~ /.*-a\b.*/) {
             description = description.replaceAll(/-a\b/, ' with link')
         }
-        if (fileBaseName ==~ /\$.*/) {
-            description = description.replaceAll(/\$/, ' reactive form variation')
+        if (fileBaseName ==~ /^\$.*/) {
+            description = 'Reactive form variation of ' + description.replaceAll(/\$/, '')
         } else if (description ==~ /.*\$.*/) {
             description = description.replaceAll(/\$/, ' with observable variation')
         }
