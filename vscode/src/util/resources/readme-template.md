@@ -15,7 +15,7 @@ Suggestions, feedback and other comments welcome via [@1tontech](https://twitter
 
 Create a new HTML document and
 
-1. Type `md-` followed by pressing `Ctrl+Space` to see all available angular material design snippets.
+1. Type `md-` followed by pressing `Ctrl+Space` to see all available angular material snippets.
 2. Type `td-` followed by pressing `Ctrl+Space` to see all available teradata covalent snippets.
 3. Type `@fx` followed by pressing `Ctrl+Space` to see all available angular flex layout snippets.
 4. Type `mi-` followed by pressing `Ctrl+Space` to see all available material icon snippets.
