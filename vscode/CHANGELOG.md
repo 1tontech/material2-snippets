@@ -1,3 +1,4 @@
+### Since 0.8.5 (15 Jun 2017):
 ### Since 0.8.4 (15 Jun 2017):
 
   - Better documentation

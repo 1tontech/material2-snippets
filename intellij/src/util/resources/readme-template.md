@@ -1,5 +1,5 @@
-IntelliJ plugin/extension containing snippets/templates for Angular Material 2,  Flex layout 1, Teradata Covalent 1 & Material icons
-============================================================================================================================================
+IntelliJ plugin/extension containing snippets/templates for Angular Material 2, Angular Flex layout 1, Teradata Covalent 1 & Material icons
+===========================================================================================================================================
 
 This plugin is compatible with the following JetBrains products:
 
@@ -20,9 +20,9 @@ Suggestions, feedback and other comments welcome via [@1tontech](https://twitter
 
 Create a new HTML document and
 
-1. Type `md-` followed by pressing `Ctrl+Space` to see all available angular material snippets.
-2. Type `td-` followed by pressing `Ctrl+Space` to see all available teradata covalent snippets.
-3. Type `@fx` followed by pressing `Ctrl+Space` to see all available angular flex layout snippets.
+1. Type `md-` followed by pressing `Ctrl+Space` to see all available angular material snippets. `md` comes from `material design`
+2. Type `@fx` followed by pressing `Ctrl+Space` to see all available angular flex layout snippets. `@` means that the snippets would be html attribute `fx` comes from flex layout
+3. Type `td-` followed by pressing `Ctrl+Space` to see all available teradata covalent snippets. `td` comes from `tera data` which is the company responsible for covalent development. `td` is quite similar to `md`
 
 Alternatively you can type `autocomplete` followed by `Ctrl+J` to see the snippet matches
 
