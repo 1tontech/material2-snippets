@@ -1,0 +1,11 @@
+<md-select formControlName="${1:formControlName}"
+           placeholder="$2"
+           [required]="$10" floatPlaceholder="${11:always|never|auto}"
+           (open)="$12" (close)="$13">
+    <md-optgroup *ngFor="let ${4:group} of ${3:groups}" [label]="${4:group}.${5:name}"
+                 [disabled]="${4:group}.disabled">
+        <md-option *ngFor="let ${7:child} of ${4:group}.${6:children}" [value]="${7:child}.${8:value}">
+            {{ ${7:child}.${9:name} }}
+        </md-option>
+    </md-optgroup>
+</md-select>$END$

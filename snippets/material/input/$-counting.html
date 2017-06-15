@@ -1,0 +1,5 @@
+<md-input-container floatPlaceholder="${7:auto|always|never}">
+    <input mdInput formControlName="${1:formControlName}" type="${2:text|email|number|password|search|month|tel|time|url|date|week|datetime-local}" ${6:required}
+           placeholder="$3" #${4:templateVariable} maxLength="${5:50}">
+    <md-hint align="${8:start|end}">{{${4:templateVariable}.value.length}} / ${5:50}</md-hint>
+</md-input-container>$END$

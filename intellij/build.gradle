@@ -15,7 +15,7 @@ buildscript {
 
 apply plugin: 'org.jetbrains.intellij'
 
-version '0.7.0'
+version '0.8.0'
 
 apply plugin: 'groovy'
 apply plugin: 'java'
@@ -32,6 +32,7 @@ repositories {
 }
 
 intellij {
+    version 'IC-2017.1'
     publishPlugin {
         username System.getProperty('ij_plugin_portal_login')
         password System.getProperty('ij_plugin_portal_password')

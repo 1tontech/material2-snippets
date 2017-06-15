@@ -1,0 +1,5 @@
+<md-input-container floatPlaceholder="${6:auto|always|never}">
+    <textarea mdInput formControlName="${1:formControlName}" ${5:required}
+              placeholder="$2" #${3:templateVariable} maxLength="${4:100}"></textarea>
+    <md-hint align="${7:start|end}">{{${3:templateVariable}.value.length}} / ${4:100}</md-hint>
+</md-input-container>$END$

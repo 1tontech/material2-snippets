@@ -1,3 +1,10 @@
+### Since 0.8.0 (15 Jun 2017):
+
+  - Added support for reactive form control variation for each input
+  - Added support for datepicker in material2
+  - Added `optgroup` support for select component. This allows you to group options within select
+  - Removed `fxLayoutWrap` as this is deprecated in favor of `fxLayout`
+
 ### Since 0.7.0 (7 Mar 2017):
 
   - Fixed a minor issue with svg set
@@ -6,7 +13,7 @@
 
   - Made tooltip an attribute directive instead of snippet
 
-### Since 0.5.0 git commit -m (20 Feb 2017):
+### Since 0.5.0 (20 Feb 2017):
 
   - Fixed issue with templates that does not have name such as `button/.html` will also be included as part of templates
 

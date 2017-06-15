@@ -1,7 +1,7 @@
-Angular material v2, Teradata covalent v1, Angular flex layout v1 & Material icon snippets for Visual studio code
-=================================================================================================================
+Visual studio code (vscode) plugin/extension containing snippets for Angular Material 2, Teradata Covalent 1 & Angular Flex layout 1 & Material icons
+=====================================================================================================================================================
 
-Visual studio code plugin containing Angular material v2, Teradata covalent v1 & Angular flex layout v1 snippets. This plugin works in both in the stable & the insiders build
+This plugin works in both in the stable & the insiders build
 
 ![Plugin in action](help.gif)
 
@@ -23,20 +23,20 @@ Create a new HTML document and
 Here are the conventions that will make it easy to lookup templates
 
 1. If a tag supports multiple children, the template trigger version with `*` implies the template uses dynamic number of children `*ngFor` variation. The `*` comes from `*ngFor`
-2. If a template trigger has `:**` variation, this means this variation contains the maximum number of options for that component. `**` comes from [ant](https://ant.apache.org/manual/dirtasks.html) which matches all the files under folder & sub folders
-3. If a template trigger has `:?` variation, the template contains additional help that helps you completely utilize the existing templates
-4. If a template trigger has `_`(underscore) variation, this is a snippet(partial) that can be added to the component. This exists mainly to avoid creating variations of all permutations for the base component
-5. If a template trigger has `@` variation, this snippet targets the attribute of an html element in your markup. Think of `@` as `html attribute`
+2. If a template trigger has `$` variation, this snippet gives you the reactive variation of an input component (or) observable variation if not an input. `$` comes from the fact each reactive component acts as observable source & observable variable names usually end with a `$`)
+3. If a template trigger has `@` variation, this snippet targets the attribute of an html element in your markup. Think of `@` as `html attribute`
+4. If a template trigger has `:**` variation, this means this variation contains the maximum number of options for that component. `**` comes from [ant](https://ant.apache.org/manual/dirtasks.html) which matches all the files under folder & sub folders
+5. If a template trigger has `_`(underscore) variation, this is a snippet(partial) that can be added to the component. This exists mainly to avoid creating variations of all permutations for the base component
 6. If a template trigger has `+` variation, this snippet allows you to specify responsive variation
-7. If a template trigger has `$` variation, this snippet contains the observable variation
+7. If a template trigger has `:?` variation, the template contains additional help that helps you completely utilize the existing templates
 
 ## Mind map
 1. `*` => `*ngFor` variation
-2. `@` => Targets html attribute
-3. `_` => Html snippet
-4. `+` => Responsive variations
-5. `$` => Observable variation
-6. `:**` => maximum variations
+2. `$` => Reactive version of input (or) Observable variation if component is not an input
+3. `@` => Targets html attribute
+4. `:**` => maximum variations
+5. `_` => Html snippet
+6. `+` => Responsive variations
 7. `:?` => Help
 
 ## Installation (in 2 easy steps)

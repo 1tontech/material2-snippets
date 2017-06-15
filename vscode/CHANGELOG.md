@@ -1,3 +1,10 @@
+### Since 0.8.0 (15 Jun 2017):
+
+  - Added support for reactive form control variation for each input
+  - Added support for datepicker in material2
+  - Added `optgroup` support for select component. This allows you to group options within select
+  - Removed `fxLayoutWrap` as this is deprecated in favor of `fxLayout`
+
 ### Since 0.7.0 (7 Mar 2017):
 
   - Fixed a minor issue with svg set

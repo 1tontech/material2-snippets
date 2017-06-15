@@ -1,9 +1,9 @@
-Angular material v2, Teradata covalent v1, Angular flex layout v1 & Material icon snippets for Visual studio code
-=================================================================================================================
+Visual studio code (vscode) plugin/extension containing snippets for Angular Material 2, Teradata Covalent 1 & Angular Flex layout 1 & Material icons
+=====================================================================================================================================================
 
-Visual studio code plugin containing Angular material v2, Teradata covalent v1 & Angular flex layout v1 snippets. This plugin works in both in the stable & the insiders build
+This plugin works in both in the stable & the insiders build
 
-![Plugin in action](https://github.com/1tontech/material2-snippets/raw/vscode-0.7.0/vscode/help.gif)
+![Plugin in action](https://github.com/1tontech/material2-snippets/raw/vscode-0.8.0/vscode/help.gif)
 
 The detailed list of supported template triggers are listed [below](#documentation)
 
@@ -23,20 +23,20 @@ Create a new HTML document and
 Here are the conventions that will make it easy to lookup templates
 
 1. If a tag supports multiple children, the template trigger version with `*` implies the template uses dynamic number of children `*ngFor` variation. The `*` comes from `*ngFor`
-2. If a template trigger has `:**` variation, this means this variation contains the maximum number of options for that component. `**` comes from [ant](https://ant.apache.org/manual/dirtasks.html) which matches all the files under folder & sub folders
-3. If a template trigger has `:?` variation, the template contains additional help that helps you completely utilize the existing templates
-4. If a template trigger has `_`(underscore) variation, this is a snippet(partial) that can be added to the component. This exists mainly to avoid creating variations of all permutations for the base component
-5. If a template trigger has `@` variation, this snippet targets the attribute of an html element in your markup. Think of `@` as `html attribute`
+2. If a template trigger has `$` variation, this snippet gives you the reactive variation of an input component (or) observable variation if not an input. `$` comes from the fact each reactive component acts as observable source & observable variable names usually end with a `$`)
+3. If a template trigger has `@` variation, this snippet targets the attribute of an html element in your markup. Think of `@` as `html attribute`
+4. If a template trigger has `:**` variation, this means this variation contains the maximum number of options for that component. `**` comes from [ant](https://ant.apache.org/manual/dirtasks.html) which matches all the files under folder & sub folders
+5. If a template trigger has `_`(underscore) variation, this is a snippet(partial) that can be added to the component. This exists mainly to avoid creating variations of all permutations for the base component
 6. If a template trigger has `+` variation, this snippet allows you to specify responsive variation
-7. If a template trigger has `$` variation, this snippet contains the observable variation
+7. If a template trigger has `:?` variation, the template contains additional help that helps you completely utilize the existing templates
 
 ## Mind map
 1. `*` => `*ngFor` variation
-2. `@` => Targets html attribute
-3. `_` => Html snippet
-4. `+` => Responsive variations
-5. `$` => Observable variation
-6. `:**` => maximum variations
+2. `$` => Reactive version of input (or) Observable variation if component is not an input
+3. `@` => Targets html attribute
+4. `:**` => maximum variations
+5. `_` => Html snippet
+6. `+` => Responsive variations
 7. `:?` => Help
 
 ## Installation (in 2 easy steps)
@@ -70,13 +70,16 @@ Here are available live templates
 
 Trigger | Description
 --- | ---
-autocomplete-reactive | Autocomplete reactive
-autocomplete-template | Autocomplete template
+autocomplete$ | Autocomplete reactive form variation
+autocomplete | Autocomplete
 
 #### Button toggle
 
 Trigger | Description
 --- | ---
+button-toggle$-group-* | Button toggle reactive form variation group *forEach flavor
+button-toggle$-group | Button toggle reactive form variation group
+button-toggle$ | Button toggle reactive form variation
 button-toggle | Button toggle
 button-toggle-group-* | Button toggle group *forEach flavor
 button-toggle-group | Button toggle group
@@ -118,6 +121,8 @@ card:title-group | Card:title group
 
 Trigger | Description
 --- | ---
+checkbox$ | Checkbox reactive form variation
+checkbox$:** | Checkbox reactive form variation + more variations
 checkbox | Checkbox
 checkbox:** | Checkbox + more variations
 
@@ -130,6 +135,17 @@ chip-*:color | Chip *forEach flavor + color variation
 chip | Chip
 chip:color | Chip + color variation
 chip-basic | Chip basic
+
+#### Datepicker
+
+Trigger | Description
+--- | ---
+datepicker$-minmax | Datepicker reactive form variation minmax
+datepicker$ | Datepicker reactive form variation
+datepicker$:** | Datepicker reactive form variation + more variations
+datepicker | Datepicker
+datepicker:** | Datepicker + more variations
+datepicker-minmax | Datepicker minmax
 
 #### Dialog
 
@@ -183,6 +199,19 @@ icon-svg | Icon svg
 
 Trigger | Description
 --- | ---
+input$-counting | Input reactive form variation counting
+input$-prefix | Input reactive form variation prefix
+input$-sufix | Input reactive form variation sufix
+input$-textarea-auto-expand | Input reactive form variation textarea auto expand
+input$-textarea-counting | Input reactive form variation textarea counting
+input$-textarea-prefix | Input reactive form variation textarea prefix
+input$-textarea-sufix | Input reactive form variation textarea sufix
+input$-textarea | Input reactive form variation textarea
+input$-textarea:* | Input reactive form variation textarea:*
+input$-textarea:color | Input reactive form variation textarea + color variation
+input$ | Input reactive form variation
+input$:** | Input reactive form variation + more variations
+input$:color | Input reactive form variation + color variation
 input | Input
 input:** | Input + more variations
 input:color | Input + color variation
@@ -244,12 +273,17 @@ progress-bar-query | Progress bar query
 Trigger | Description
 --- | ---
 progress-spinner-determinate | Progress spinner determinate
+progress-spinner-determinate:** | Progress spinner determinate + more variations
 progress-spinner-indeterminate | Progress spinner indeterminate
+progress-spinner-indeterminate:** | Progress spinner indeterminate + more variations
 
 #### Radio
 
 Trigger | Description
 --- | ---
+radio$-group-* | Radio reactive form variation group *forEach flavor
+radio$-group | Radio reactive form variation group
+radio$ | Radio reactive form variation
 radio | Radio
 radio-group-* | Radio group *forEach flavor
 radio-group | Radio group
@@ -264,8 +298,22 @@ ripple-@disable | Ripple attribute directive disable
 
 Trigger | Description
 --- | ---
+select$-* | Select reactive form variation *forEach flavor
+select$-*:** | Select reactive form variation *forEach flavor + more variations
+select$-multiple-* | Select reactive form variation multiple *forEach flavor
+select$-multiple-*:** | Select reactive form variation multiple *forEach flavor + more variations
+select$-multiple | Select reactive form variation multiple
+select$-optgroups-* | Select reactive form variation optgroups *forEach flavor
+select$-optgroups-*:** | Select reactive form variation optgroups *forEach flavor + more variations
+select$ | Select reactive form variation
 select-* | Select *forEach flavor
+select-*:** | Select *forEach flavor + more variations
 select | Select
+select-multiple-* | Select multiple *forEach flavor
+select-multiple-*:** | Select multiple *forEach flavor + more variations
+select-multiple | Select multiple
+select-optgroups-* | Select optgroups *forEach flavor
+select-optgroups-*:** | Select optgroups *forEach flavor + more variations
 
 #### Sidenav
 
@@ -282,12 +330,15 @@ sidenav-fab:both | Sidenav fab + both variation
 
 Trigger | Description
 --- | ---
+slide-toggle$ | Slide toggle reactive form variation
 slide-toggle | Slide toggle
 
 #### Slider
 
 Trigger | Description
 --- | ---
+slider$ | Slider reactive form variation
+slider$:** | Slider reactive form variation + more variations
 slider | Slider
 slider:** | Slider + more variations
 
@@ -348,8 +399,6 @@ Trigger | Description
 @fxLayoutAlign | Flex layout attribute directive fxLayoutAlign
 @fxLayoutGap+ | Flex layout attribute directive fxLayoutGap with responsive variations
 @fxLayoutGap | Flex layout attribute directive fxLayoutGap
-@fxLayoutWrap+ | Flex layout attribute directive fxLayoutWrap with responsive variations
-@fxLayoutWrap | Flex layout attribute directive fxLayoutWrap
 @fxShow+ | Flex layout attribute directive fxShow with responsive variations
 @fxShow | Flex layout attribute directive fxShow
 @fxStyle | Flex layout attribute directive fxStyle
@@ -361,6 +410,8 @@ Trigger | Description
 
 Trigger | Description
 --- | ---
+autocomplete-chip$ | Autocomplete chip reactive form variation
+autocomplete-chip$:** | Autocomplete chip reactive form variation + more variations
 autocomplete-chip | Autocomplete chip
 autocomplete-chip:** | Autocomplete chip + more variations
 autocomplete-chip-readonly | Autocomplete chip readonly
@@ -371,6 +422,10 @@ Trigger | Description
 --- | ---
 data-table-!sortable | Data table !sortable
 data-table-!sortable:** | Data table !sortable + more variations
+data-table$-!sortable | Data table reactive form variation !sortable
+data-table$-!sortable:** | Data table reactive form variation !sortable + more variations
+data-table$-sortable | Data table reactive form variation sortable
+data-table$-sortable:** | Data table reactive form variation sortable + more variations
 data-table-@cell | Data table attribute directive cell
 data-table-@column-!sortable:** | Data table attribute directive column !sortable + more variations
 data-table-@column-sortable:** | Data table attribute directive column sortable + more variations

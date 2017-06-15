@@ -1,6 +1,6 @@
-<md-input-container>
+<md-input-container floatPlaceholder="${9:always|never|auto}">
     <input mdInput placeholder="${1:placeholder}" [mdAutocomplete]="${7:autocompleteTemplateRefId}"
-           name="${2:componentToggleProperty}" [(ngModel)]="${2:componentToggleProperty}" (ngModelChange)="this.${3:choices} = ${5:filterChoices}(${2:componentToggleProperty})">
+           [(ngModel)]="${2:modelName}" (ngModelChange)="this.${3:choices} = ${5:filterChoices}(${2:modelName})">
 </md-input-container>
 
 <md-autocomplete #${7:autocompleteTemplateRefId}="mdAutocomplete" [displayWith]="${6:onSelectConvertValueToInputFn}">

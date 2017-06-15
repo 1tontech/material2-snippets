@@ -22,12 +22,12 @@ final class Util {
         if (skipParentDirNameFromTrigger) {
             return fileBaseName
         } else {
-            return fileParent + (fileBaseName ? (fileBaseName ==~ /^:.+$/ ? fileBaseName : '-' + fileBaseName) : '')
+            return fileParent + (fileBaseName ? ((fileBaseName ==~ /^:.+$/ || fileBaseName ==~ /^\$.*$/) ? fileBaseName : '-' + fileBaseName) : '')
         }
     }
 
     static CharSequence nameToDescription(CharSequence fileParent, CharSequence fileBaseName) {
-        def description = fileBaseName ==~ /^:.*$/ ? "${fileParent}${fileBaseName}".trim() : "${fileParent}-${fileBaseName}".trim()
+        def description = (fileBaseName ==~ /^:.*$/  || fileBaseName ==~ /^\$.*$/) ? "${fileParent}${fileBaseName}".trim() : "${fileParent}-${fileBaseName}".trim()
         if (description ==~ /.*\+.*/) {
             description = description.replaceAll(/\+/, ' with responsive variations')
         }
@@ -52,7 +52,9 @@ final class Util {
         if (description ==~ /.*-a\b.*/) {
             description = description.replaceAll(/-a\b/, ' with link')
         }
-        if (description ==~ /.*\$.*/) {
+        if (fileBaseName ==~ /\$.*/) {
+            description = description.replaceAll(/\$/, ' reactive form variation')
+        } else if (description ==~ /.*\$.*/) {
             description = description.replaceAll(/\$/, ' with observable variation')
         }
         escapeXml11(description.replace(/-/, ' ')).trim()

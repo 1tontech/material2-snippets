@@ -1,0 +1,12 @@
+<md-input-container>
+    <input mdInput
+           [(ngModel)]="${1:modelName}"
+           [mdDatepicker]="${2:datePickerRef}"
+           placeholder="$3"
+           [min]="${4:minDate}"
+           [max]="${5:maxDate}">
+    <button mdSuffix [mdDatepickerToggle]="${2:datePickerRef}"></button>
+</md-input-container>
+<md-datepicker
+        #${2:datePickerRef}
+        (selectedChanged)="$6"></md-datepicker>
