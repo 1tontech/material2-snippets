@@ -1,11 +1,11 @@
 <idea-plugin url="https://github.com/1tontech/material2-snippets">
     <id>in.oneton.contrib.plugin.angular.material</id>
-    <name>Angular Material 2, Angular Flex layout 1, Teradata Covalent 1 &amp; Material icon live templates</name>
+    <name>Angular Material 2, Flex layout 1, Teradata Covalent 1 &amp; Material icon live templates</name>
     <version>@@@VERSION@@@</version>
     <vendor url="http://github.com/1tontech">1Ton Technologies</vendor>
 
     <description><![CDATA[
-      <h2>Angular Material 2, Angular Flex layout 1, Teradata Covalent 1 & Material icon live templates</h2>
+      <h2>Angular Material 2, Flex layout 1, Teradata Covalent 1 & Material icon live templates</h2>
       <img src="https://raw.githubusercontent.com/1tontech/material2-snippets/intellij-@@@VERSION@@@/intellij/help.gif"/>
       <br />
       <p>Documentation can be found <a href="https://github.com/1tontech/material2-snippets/tree/intellij-@@@VERSION@@@">here</a></p>

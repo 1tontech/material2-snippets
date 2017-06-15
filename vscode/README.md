@@ -1,9 +1,9 @@
-Visual studio code (vscode) plugin/extension containing snippets for Angular Material 2, Angular Flex layout 1, Teradata Covalent 1 & Material icons
+Visual studio code (vscode) plugin/extension containing snippets for Angular Material 2, Flex layout 1, Teradata Covalent 1 & Material icons
 =======================================================================================================================================================
 
 This plugin works in both in the stable & the insiders build
 
-![Plugin in action](https://github.com/1tontech/material2-snippets/raw/vscode-0.8.2/vscode/help.gif)
+![Plugin in action](https://github.com/1tontech/material2-snippets/raw/vscode-0.8.3/vscode/help.gif)
 
 The detailed list of supported template triggers are listed [below](#documentation)
 

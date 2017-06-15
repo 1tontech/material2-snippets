@@ -1,4 +1,4 @@
-IntelliJ plugin/extension containing snippets/templates for Angular Material 2,  Angular Flex layout 1, Teradata Covalent 1 & Material icons
+IntelliJ plugin/extension containing snippets/templates for Angular Material 2,  Flex layout 1, Teradata Covalent 1 & Material icons
 ============================================================================================================================================
 
 This plugin is compatible with the following JetBrains products:
