@@ -20,11 +20,14 @@ Suggestions, feedback and other comments welcome via [@1tontech](https://twitter
 
 Create a new HTML document and
 
-1. Type `md-` followed by pressing `Ctrl+Space` to see all available angular material snippets. `md` comes from `material design`
-2. Type `@fx` followed by pressing `Ctrl+Space` to see all available angular flex layout snippets. `@` means that the snippets would be html attribute `fx` comes from flex layout
-3. Type `td-` followed by pressing `Ctrl+Space` to see all available teradata covalent snippets. `td` comes from `tera data` which is the company responsible for covalent development. `td` is quite similar to `md`
+1. Type `md-` for all material components. Use `@md` for all material attribute directives. `md` comes from `material design`
+2. Type `@fx` for all material components. `fx` comes from `flex layout`
+3. Type `td-` for all teradata covalent components. Use `@td` for all teradata covalent attribute directives. `td` comes from `tera data` which is the company responsible for covalent development. `td` is quite similar to `md`
 
-Alternatively you can type `autocomplete` followed by `Ctrl+J` to see the snippet matches
+`Ctrl+Space` will trigger autocomplete dialog. (or) Use `Ctrl+J` if you want autocomplete dialog to narrow down results to just live templates/snippets
+
+> 1. For autocompletion of components, use hyphen `-` format. i.e for material button, type `md-button`
+> 2. For autocompletion of attribute directives, use `@` format. i.e for flex layout, use `@fxLayout` (or) use `@mdTooltip` for material tooltip
 
 Here are the conventions that will make it easy to lookup templates
 
@@ -299,7 +302,7 @@ md-**radio-group** | Radio group
 
 Trigger | Description
 --- | ---
-md-**ripple-@disable** | Ripple attribute directive disable
+@md**Ripple:disable** | attribute directive  Ripple  + disable variation
 
 #### Select
 
@@ -373,8 +376,8 @@ md-**toolbar-rows:color** | Toolbar rows + color variation
 
 Trigger | Description
 --- | ---
-md-**tooltip-@** | Tooltip attribute directive
-md-**tooltip-@:\*\*** | Tooltip attribute directive  + more variations
+@md**Tooltip** | attribute directive  Tooltip
+@md**Tooltip:\*\*** | attribute directive  Tooltip  + more variations
 
 
 ### Angular flex layout snippets
@@ -383,32 +386,32 @@ md-**tooltip-@:\*\*** | Tooltip attribute directive  + more variations
 
 Trigger | Description
 --- | ---
-@fx**Class** | Flex layout attribute directive fxClass
-@fx**Flex+** | Flex layout attribute directive fxFlex with responsive variations
-@fx**Flex+:\*\*** | Flex layout attribute directive fxFlex with responsive variations + more variations
-@fx**Flex** | Flex layout attribute directive fxFlex
-@fx**Flex:\*\*** | Flex layout attribute directive fxFlex + more variations
-@fx**FlexAlign+** | Flex layout attribute directive fxFlexAlign with responsive variations
-@fx**FlexAlign** | Flex layout attribute directive fxFlexAlign
-@fx**FlexFill+** | Flex layout attribute directive fxFlexFill with responsive variations
-@fx**FlexFill** | Flex layout attribute directive fxFlexFill
-@fx**FlexOffset+** | Flex layout attribute directive fxFlexOffset with responsive variations
-@fx**FlexOffset** | Flex layout attribute directive fxFlexOffset
-@fx**FlexOrder+** | Flex layout attribute directive fxFlexOrder with responsive variations
-@fx**FlexOrder** | Flex layout attribute directive fxFlexOrder
-@fx**Hide+** | Flex layout attribute directive fxHide with responsive variations
-@fx**Hide** | Flex layout attribute directive fxHide
-@fx**Layout+** | Flex layout attribute directive fxLayout with responsive variations
-@fx**Layout+:\*\*** | Flex layout attribute directive fxLayout with responsive variations + more variations
-@fx**Layout** | Flex layout attribute directive fxLayout
-@fx**Layout:\*\*** | Flex layout attribute directive fxLayout + more variations
-@fx**LayoutAlign+** | Flex layout attribute directive fxLayoutAlign with responsive variations
-@fx**LayoutAlign** | Flex layout attribute directive fxLayoutAlign
-@fx**LayoutGap+** | Flex layout attribute directive fxLayoutGap with responsive variations
-@fx**LayoutGap** | Flex layout attribute directive fxLayoutGap
-@fx**Show+** | Flex layout attribute directive fxShow with responsive variations
-@fx**Show** | Flex layout attribute directive fxShow
-@fx**Style** | Flex layout attribute directive fxStyle
+@fx**Class** | attribute directive  Flex layout fxClass
+@fx**Flex+** | attribute directive  Flex layout fxFlex with responsive variations
+@fx**Flex+:\*\*** | attribute directive  Flex layout fxFlex with responsive variations + more variations
+@fx**Flex** | attribute directive  Flex layout fxFlex
+@fx**Flex:\*\*** | attribute directive  Flex layout fxFlex + more variations
+@fx**FlexAlign+** | attribute directive  Flex layout fxFlexAlign with responsive variations
+@fx**FlexAlign** | attribute directive  Flex layout fxFlexAlign
+@fx**FlexFill+** | attribute directive  Flex layout fxFlexFill with responsive variations
+@fx**FlexFill** | attribute directive  Flex layout fxFlexFill
+@fx**FlexOffset+** | attribute directive  Flex layout fxFlexOffset with responsive variations
+@fx**FlexOffset** | attribute directive  Flex layout fxFlexOffset
+@fx**FlexOrder+** | attribute directive  Flex layout fxFlexOrder with responsive variations
+@fx**FlexOrder** | attribute directive  Flex layout fxFlexOrder
+@fx**Hide+** | attribute directive  Flex layout fxHide with responsive variations
+@fx**Hide** | attribute directive  Flex layout fxHide
+@fx**Layout+** | attribute directive  Flex layout fxLayout with responsive variations
+@fx**Layout+:\*\*** | attribute directive  Flex layout fxLayout with responsive variations + more variations
+@fx**Layout** | attribute directive  Flex layout fxLayout
+@fx**Layout:\*\*** | attribute directive  Flex layout fxLayout + more variations
+@fx**LayoutAlign+** | attribute directive  Flex layout fxLayoutAlign with responsive variations
+@fx**LayoutAlign** | attribute directive  Flex layout fxLayoutAlign
+@fx**LayoutGap+** | attribute directive  Flex layout fxLayoutGap with responsive variations
+@fx**LayoutGap** | attribute directive  Flex layout fxLayoutGap
+@fx**Show+** | attribute directive  Flex layout fxShow with responsive variations
+@fx**Show** | attribute directive  Flex layout fxShow
+@fx**Style** | attribute directive  Flex layout fxStyle
 
 
 ### Teradata covalent snippets
@@ -433,11 +436,11 @@ td-**data-table$-!sortable** | Reactive form variation of Data table !sortable
 td-**data-table$-!sortable:\*\*** | Reactive form variation of Data table !sortable + more variations
 td-**data-table$-sortable** | Reactive form variation of Data table sortable
 td-**data-table$-sortable:\*\*** | Reactive form variation of Data table sortable + more variations
-td-**data-table-@cell** | Data table attribute directive cell
-td-**data-table-@column-!sortable:\*\*** | Data table attribute directive column !sortable + more variations
-td-**data-table-@column-sortable:\*\*** | Data table attribute directive column sortable + more variations
-td-**data-table-@row** | Data table attribute directive row
-td-**data-table-@table** | Data table attribute directive table
+@td**DataTableCell** | attribute directive  Data table cell
+@td**DataTableColumn!Sortable:\*\*** | attribute directive  Data table column !sortable + more variations
+@td**DataTableColumnSortable:\*\*** | attribute directive  Data table column sortable + more variations
+@td**DataTableRow** | attribute directive  Data table row
+@td**DataTableTable** | attribute directive  Data table table
 td-**data-table-sortable** | Data table sortable
 td-**data-table-sortable:\*\*** | Data table sortable + more variations
 
@@ -445,11 +448,11 @@ td-**data-table-sortable:\*\*** | Data table sortable + more variations
 
 Trigger | Description
 --- | ---
-td-**directive-@autotrim** | Directive attribute directive autotrim
-td-**directive-@faded** | Directive attribute directive faded
-td-**directive-@media-toggle** | Directive attribute directive media toggle
-td-**directive-@media-toggle:\*\*** | Directive attribute directive media toggle + more variations
-td-**directive-@toggle** | Directive attribute directive toggle
+@td**DirectiveAutotrim** | attribute directive  Directive autotrim
+@td**DirectiveFaded** | attribute directive  Directive faded
+@td**DirectiveMediaToggle** | attribute directive  Directive media toggle
+@td**DirectiveMediaToggle:\*\*** | attribute directive  Directive media toggle + more variations
+@td**DirectiveToggle** | attribute directive  Directive toggle
 
 #### Dynamic form
 
@@ -480,8 +483,8 @@ Trigger | Description
 td-**file-upload** | File upload
 td-**file-upload:\*\*** | File upload + more variations
 td-**file-upload:?** | File upload help
-td-**file-upload-@drop** | File upload attribute directive drop
-td-**file-upload-@select** | File upload attribute directive select
+@td**FileUploadDrop** | attribute directive  File upload drop
+@td**FileUploadSelect** | attribute directive  File upload select
 
 #### Json formatter
 

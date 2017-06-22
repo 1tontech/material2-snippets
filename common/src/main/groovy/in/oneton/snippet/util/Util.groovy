@@ -18,16 +18,40 @@ final class Util {
                 .collect(toList())
     }
 
-    static CharSequence triggerName(CharSequence fileParent, CharSequence fileBaseName, boolean skipParentDirNameFromTrigger = false) {
+    static TriggerNameDetail triggerName(CharSequence prefix, CharSequence fileParent, CharSequence fileBaseName, boolean skipParentDirNameFromTrigger = false) {
+        String computedPrefix
+        String name
         if (skipParentDirNameFromTrigger) {
-            return fileBaseName
+            if (fileBaseName.startsWith("@")) {
+                computedPrefix = "@${prefix}"
+                name = fileBaseName.startsWith("@${prefix}") ? fileBaseName : "@${prefix}${(fileBaseName - '@').capitalize()}"
+            } else {
+                computedPrefix = "${prefix}-"
+                name = "${prefix}-${fileBaseName.capitalize()}"
+            }
         } else {
-            return fileParent + (fileBaseName ? ((fileBaseName ==~ /^:.+$/ || fileBaseName ==~ /^\$.*$/) ? fileBaseName : '-' + fileBaseName) : '')
+            if (fileBaseName.startsWith("@")) {
+                computedPrefix = "@${prefix}"
+                name = "@${prefix}${fileParent.replaceAll(/-([a-z])/, {matchGroup -> matchGroup[1].toUpperCase() }).capitalize()}" + (fileBaseName ? (fileBaseName - '@').replaceAll(/-(!?)([a-z])/, {matchGroup ->  matchGroup[1] ?  '!' + matchGroup[2].toUpperCase() : matchGroup[2].toUpperCase() }).capitalize() : '')
+            } else {
+                def returnVal = fileParent + (fileBaseName ? ((fileBaseName ==~ /^:.+$/ || fileBaseName ==~ /^\$.*$/) ? fileBaseName : '-' + fileBaseName) : '')
+                computedPrefix = "${prefix}-"
+                name = "${prefix}-${returnVal}"
+            }
         }
+        return TriggerNameDetail.builder().name(name).computedPrefix(computedPrefix).build()
     }
 
     static CharSequence nameToDescription(CharSequence fileParent, CharSequence fileBaseName) {
-        def description = (fileBaseName ==~ /^:.*$/  || fileBaseName ==~ /^\$.*$/) ? "${fileParent}${fileBaseName}".trim() : "${fileParent}-${fileBaseName}".trim()
+        def description
+        if ((fileBaseName ==~ /^:.*$/  || fileBaseName ==~ /^\$.*$/)) {
+            description = "${fileParent}${fileBaseName}".trim()
+        } else if (fileBaseName ==~ /^@.*$/) {
+            description = "@ ${fileParent} ${fileBaseName - '@'}".trim()
+        } else {
+            description = "${fileParent}-${fileBaseName}".trim()
+        }
+
         if (description ==~ /.*\+.*/) {
             description = description.replaceAll(/\+/, ' with responsive variations')
         }

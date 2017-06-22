@@ -14,9 +14,9 @@ class ReadmeGenerator {
         IOUtils.copy(getClass().getResourceAsStream("/readme-template.md"), readmeContentWriter, defaultCharset())
         String readmeContent = readmeContentWriter.toString()
 
-        readmeContent = replacePlaceholderWithSnippets(readmeContent, /@@@GENERATED_MATERIAL_SNIPPETS@@@/, getSnippetResources("${snippetsPath}/material"), false, 'md-', null)
-        readmeContent = replacePlaceholderWithSnippets(readmeContent, /@@@GENERATED_COVALENT_SNIPPETS@@@/, getSnippetResources("${snippetsPath}/covalent"), false, 'td-', null)
-        readmeContent = replacePlaceholderWithSnippets(readmeContent, /@@@GENERATED_FLEX_SNIPPETS@@@/, getSnippetResources("${snippetsPath}/flex-layout"), true, null, '@fx')
+        readmeContent = replacePlaceholderWithSnippets(readmeContent, /@@@GENERATED_MATERIAL_SNIPPETS@@@/, getSnippetResources("${snippetsPath}/material"), false, 'md')
+        readmeContent = replacePlaceholderWithSnippets(readmeContent, /@@@GENERATED_COVALENT_SNIPPETS@@@/, getSnippetResources("${snippetsPath}/covalent"), false, 'td')
+        readmeContent = replacePlaceholderWithSnippets(readmeContent, /@@@GENERATED_FLEX_SNIPPETS@@@/, getSnippetResources("${snippetsPath}/flex-layout"), true, 'fx')
 
         if (targetsVscode) {
             readmeContent = readmeContent.replaceAll(/help\.gif/, "https://github.com/1tontech/material2-snippets/raw/vscode-${version}/vscode/help.gif")
@@ -42,7 +42,7 @@ class ReadmeGenerator {
         println "Regenerated readme file. Saved to ${saveTo.absolutePath}"
     }
 
-    String replacePlaceholderWithSnippets(String readmeContent, String placeholderToReplace, List<File> snippetResources, boolean skipParentDirNameFromTrigger, String prependUnhighlightedTriggerPrefix, String unhighlightExistingPrefix) {
+    String replacePlaceholderWithSnippets(String readmeContent, String placeholderToReplace, List<File> snippetResources, boolean skipParentDirNameFromTrigger, String prefix) {
         Map<String, List<SnippetHelp>> folderToSnippets = new LinkedHashMap<>()
         snippetResources.each { snippetResource ->
             def fileBaseName = snippetResource.name.take(snippetResource.name.lastIndexOf('.'))
@@ -52,17 +52,8 @@ class ReadmeGenerator {
             def snippetHelpBuilder = SnippetHelp.builder()
                     .description(nameToDescription(sectionName, fileBaseName))
 
-            def unprocessedTriggerName = triggerName(parentDirName, fileBaseName, skipParentDirNameFromTrigger)
-
-            if (prependUnhighlightedTriggerPrefix) {
-                snippetHelpBuilder.trigger("${prependUnhighlightedTriggerPrefix}**${unprocessedTriggerName.replaceAll('\\*', '\\\\\\\\*')}**")
-            } else {
-                snippetHelpBuilder.trigger(unprocessedTriggerName)
-            }
-
-            if (unhighlightExistingPrefix) {
-                snippetHelpBuilder.trigger("${unhighlightExistingPrefix}**${(unprocessedTriggerName - unhighlightExistingPrefix).replaceAll('\\*', '\\\\\\\\*')}**")
-            }
+            def triggerNameDetail = triggerName(prefix, parentDirName, fileBaseName, skipParentDirNameFromTrigger)
+            snippetHelpBuilder.trigger("${triggerNameDetail.computedPrefix}**${(triggerNameDetail.name - triggerNameDetail.computedPrefix).replaceAll('\\*', '\\\\\\\\*')}**")
 
             List<SnippetHelp> helps = folderToSnippets.get(sectionName)
             if (!helps) {

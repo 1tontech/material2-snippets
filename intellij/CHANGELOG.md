@@ -1,3 +1,7 @@
+### Since 0.9.0 (22 Jun 2017):
+
+  - Now all attribute directives start with `@`
+
 ### Since 0.8.2 (15 Jun 2017):
 ### Since 0.8.1 (15 Jun 2017):
 

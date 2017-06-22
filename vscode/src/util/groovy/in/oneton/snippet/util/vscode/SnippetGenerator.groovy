@@ -17,21 +17,21 @@ class SnippetGenerator {
         Map<String, Snippet> descriptionToSnippet = new LinkedHashMap<>()
 
         GeneratorMetadata metadata = GeneratorMetadata.builder().templateRootPath("${snippetsPath}/material")
-                .triggerNameGenerator({ String fileParent, String fileBaseName -> "md-${triggerName(fileParent, fileBaseName)}" })
+                .triggerNameGenerator({ String fileParent, String fileBaseName -> triggerName('md', fileParent, fileBaseName).name })
                 .descriptionGenerator({ String fileParent, String fileBaseName -> nameToDescription(fileParent, fileBaseName) })
                 .build()
         generateFromMetadata(descriptionToSnippet, metadata)
         println "Processed material template files"
 
         metadata = GeneratorMetadata.builder().templateRootPath("${snippetsPath}/covalent")
-                .triggerNameGenerator({ String fileParent, String fileBaseName -> "td-${triggerName(fileParent, fileBaseName)}" })
+                .triggerNameGenerator({ String fileParent, String fileBaseName -> triggerName('td', fileParent, fileBaseName).name })
                 .descriptionGenerator({ String fileParent, String fileBaseName -> nameToDescription(fileParent, fileBaseName) })
                 .build()
         generateFromMetadata(descriptionToSnippet, metadata)
         println "Processed covalent template files"
 
         metadata = GeneratorMetadata.builder().templateRootPath("${snippetsPath}/flex-layout")
-                .triggerNameGenerator({ String fileParent, String fileBaseName -> "@fx${fileBaseName - '@fx'}" })
+                .triggerNameGenerator({ String fileParent, String fileBaseName -> triggerName('fx', fileParent, fileBaseName, true).name })
                 .descriptionGenerator({ String fileParent, String fileBaseName -> nameToDescription(fileParent, fileBaseName) })
                 .build()
         generateFromMetadata(descriptionToSnippet, metadata)

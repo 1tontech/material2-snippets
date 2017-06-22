@@ -31,7 +31,7 @@ class Generator {
 
         GeneratorMetadata metadata = GeneratorMetadata.builder().templateRootPath("${snippetsPath}/material")
                 .codePointVarString(codePointVarString)
-                .triggerNameGenerator({ String fileParent, String fileBaseName -> "md-${triggerName(fileParent, fileBaseName)}" })
+                .triggerNameGenerator({ String fileParent, String fileBaseName -> triggerName('md', fileParent, fileBaseName).name })
                 .descriptionGenerator({ String fileParent, String fileBaseName -> nameToDescription(fileParent, fileBaseName) })
                 .groupName('Material')
                 .snippetXmlPath("${resourcesPath}/material.xml")
@@ -41,7 +41,7 @@ class Generator {
 
         metadata = GeneratorMetadata.builder().templateRootPath("${snippetsPath}/covalent")
                 .codePointVarString(codePointVarString)
-                .triggerNameGenerator({ String fileParent, String fileBaseName -> "td-${triggerName(fileParent, fileBaseName)}" })
+                .triggerNameGenerator({ String fileParent, String fileBaseName -> triggerName('td', fileParent, fileBaseName).name })
                 .descriptionGenerator({ String fileParent, String fileBaseName -> nameToDescription(fileParent, fileBaseName) })
                 .groupName('Covalent')
                 .snippetXmlPath("${resourcesPath}/covalent.xml")
@@ -51,7 +51,7 @@ class Generator {
 
         metadata = GeneratorMetadata.builder().templateRootPath("${snippetsPath}/flex-layout")
                 .codePointVarString(codePointVarString)
-                .triggerNameGenerator({ String fileParent, String fileBaseName -> "@fx${fileBaseName - '@fx'}" })
+                .triggerNameGenerator({ String fileParent, String fileBaseName -> triggerName('fx', fileParent, fileBaseName, true).name })
                 .descriptionGenerator({ String fileParent, String fileBaseName -> nameToDescription(fileParent, fileBaseName) })
                 .groupName('Flex layout')
                 .snippetXmlPath("${resourcesPath}/flex-layout.xml")
