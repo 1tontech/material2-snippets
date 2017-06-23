@@ -1,3 +1,10 @@
+### Since 0.10.0 (23 Jun 2017):
+
+  - Added support for new `accordion` & `expansion` material components
+  - Fixed issues with few covalent snippets
+  - Added new attribute directives for existing components
+  - Made compatible with material `2.0.0-beta.7` release
+
 ### Since 0.9.0 (22 Jun 2017):
 
   - Now all attribute directives start with `@`

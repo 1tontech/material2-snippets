@@ -1,4 +1,4 @@
-<td-step #${2:stepRef} sublabel="${3:Step subtitle}" active="${4:true|false}"
+<td-step #${2:stepRef} sublabel="${3:Step subtitle}" [active]="${4:true|false}"
          state="${5:none|required|complete}" (activated)="${6:onActivated}" (deactivated)="${7:onDeactivated}">
     <template td-step-label>
         ${1:Step title}

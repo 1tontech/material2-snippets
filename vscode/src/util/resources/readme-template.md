@@ -20,7 +20,7 @@ Create a new HTML document and
 2. Type `@fx` for all material components. `fx` comes from `flex layout`
 3. Type `td-` for all teradata covalent components. Use `@td` for all teradata covalent attribute directives. `td` comes from `tera data` which is the company responsible for covalent development. `td` is quite similar to `md`
 
-`Ctrl+Space` will trigger autocomplete dialog. (or) Use `Ctrl+J` if you want autocomplete dialog to narrow down results to just live templates/snippets
+`Ctrl+Space` will trigger autocomplete dialog for snippet selection
 
 > 1. For autocompletion of components, use hyphen `-` format. i.e for material button, type `md-button`
 > 2. For autocompletion of attribute directives, use `@` format. i.e for flex layout, use `@fxLayout` (or) use `@mdTooltip` for material tooltip

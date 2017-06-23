@@ -1,16 +1,16 @@
 <md-card>
     <md-card-header>
-        <img md-card-avatar src="${1:Avatar source}">
+        <img mdCardAvatar src="${1:Avatar source}">
         <md-card-title>${2:Title}</md-card-title>
         <md-card-subtitle>${3:Subtitle}</md-card-subtitle>
     </md-card-header>
-    <img md-card-image src="${4:Card wide image source}">
+    <img mdCardImage src="${4:Card wide image source}">
     <md-card-content>
         ${5:Text content}
     </md-card-content>
     <md-card-actions align="${6:start|end}">
-        <button md-button (click)="${8:onAction1}">${7:Action1}</button>
-        <button md-button (click)="${10:onAction2}">${9:Action2}</button>
+        <button md-button (click)="${8:onAction($event)}">${7:Action1}</button>
+        <button md-button (click)="${10:onAction($event)}">${9:Action2}</button>
         $END$
     </md-card-actions>
     <md-card-footer>

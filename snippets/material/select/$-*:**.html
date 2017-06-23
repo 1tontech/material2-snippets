@@ -1,6 +1,6 @@
 <md-select formControlName="${1:formControlName}" placeholder="$2"
            [required]="$7" floatPlaceholder="${8:always|never|auto}"
-           (open)="$9" (close)="$10">
+           (open)="$9" (close)="$10" tabIndex="$11" ${12:[panelClass]=""}>
     <md-option *ngFor="let ${4:choice} of ${3:choices}" [value]="${4:choice}$6">
         ${4:choice}$5
     </md-option>

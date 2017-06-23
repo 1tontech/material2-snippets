@@ -1,5 +1,5 @@
 <td-steps (stepChange)="${2:onStepChange}" mode="${1:horizontal|vertical}">
-    <td-step #sublabel="${4:Step subtitle}" active="${5:true|false}" state="${6:none|required|complete}">
+    <td-step #sublabel="${4:Step subtitle}" [active]="${5:true|false}" state="${6:none|required|complete}">
         <template td-step-label>
             ${3:Step title}
         </template>

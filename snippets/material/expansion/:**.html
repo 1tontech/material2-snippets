@@ -1,0 +1,11 @@
+<md-expansion-panel [hideToggle]="${1:false|true}">
+    <md-expansion-panel-header>
+        <mat-panel-title>$2</mat-panel-title>
+        <mat-panel-description>$3</mat-panel-description>
+    </md-expansion-panel-header>
+    ${8:Content that gets shown when expanded}$END$
+    <md-action-row>
+        <button md-button (click)="${5:onAction($event)}">${4:Action1}</button>
+        <button md-button (click)="${7:onAction($event)}">${6:Action2}</button>
+    </md-action-row>
+</md-expansion-panel>
