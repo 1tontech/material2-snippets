@@ -76,6 +76,15 @@ Here are available live templates
 
 ### Angular material snippets
 
+#### Accordion
+
+Trigger | Description
+--- | ---
+md-**accordion** | Accordion
+md-**accordion-_expansion-panel-action** | Accordion expansion snippet panel action
+md-**accordion-_expansion-panel** | Accordion expansion snippet panel
+md-**accordion-_expansion-panel:action** | Accordion expansion snippet panel + action variation
+
 #### Autocomplete
 
 Trigger | Description
@@ -126,6 +135,14 @@ Trigger | Description
 md-**card** | Card
 md-**card:avatar** | Card + avatar variation
 md-**card:title-group** | Card:title group
+@md**CardAvatar** | attribute directive  Card avatar
+@md**CardImageLarge** | attribute directive  Card image large
+@md**CardImageMedium** | attribute directive  Card image medium
+@md**CardImageSmall** | attribute directive  Card image small
+@md**CardImageXLarge** | attribute directive  Card image x large
+@md**CardImage** | attribute directive  Card image
+@md**CardSubTitle** | attribute directive  Card sub title
+@md**CardTitle** | attribute directive  Card title
 
 #### Checkbox
 
@@ -164,6 +181,10 @@ Trigger | Description
 md-**dialog** | Dialog
 md-**dialog:\*\*** | Dialog + more variations
 md-**dialog:?** | Dialog help
+@md**DialogActions** | attribute directive  Dialog actions
+@md**DialogClose** | attribute directive  Dialog close
+@md**DialogContent** | attribute directive  Dialog content
+@md**DialogTitle** | attribute directive  Dialog title
 
 #### Divider
 
@@ -171,6 +192,13 @@ Trigger | Description
 --- | ---
 md-**divider** | Divider
 md-**divider:inset** | Divider + inset variation
+
+#### Expansion
+
+Trigger | Description
+--- | ---
+md-**expansion** | Expansion
+md-**expansion:\*\*** | Expansion + more variations
 
 #### Grid
 
@@ -225,6 +253,7 @@ md-**input$:color** | Reactive form variation of Input + color variation
 md-**input** | Input
 md-**input:\*\*** | Input + more variations
 md-**input:color** | Input + color variation
+md-**input-_error** | Input error snippet
 md-**input-counting** | Input counting
 md-**input-prefix** | Input prefix
 md-**input-sufix** | Input sufix
@@ -236,6 +265,12 @@ md-**input-textarea** | Input textarea
 md-**input-textarea:\*** | Input textarea:*
 md-**input-textarea:color** | Input textarea + color variation
 
+#### Line
+
+Trigger | Description
+--- | ---
+@md**Line** | attribute directive  Line
+
 #### List
 
 Trigger | Description
@@ -243,6 +278,7 @@ Trigger | Description
 md-**list-\*** | List *forEach flavor
 md-**list** | List
 md-**list:\*\*** | List + more variations
+@md**ListIcon** | attribute directive  List icon
 md-**list-_avatar** | List avatar snippet
 md-**list-_header** | List header snippet
 md-**list-_icon** | List icon snippet
@@ -358,6 +394,8 @@ Trigger | Description
 --- | ---
 md-**tab-\*** | Tab *forEach flavor
 md-**tab** | Tab
+@md**TabLabel** | attribute directive  Tab label
+@md**TabLink** | attribute directive  Tab link
 md-**tab-nav-\*** | Tab nav *forEach flavor
 md-**tab-nav** | Tab nav
 md-**tab-rich-\*** | Tab rich *forEach flavor
@@ -378,6 +416,10 @@ Trigger | Description
 --- | ---
 @md**Tooltip** | attribute directive  Tooltip
 @md**Tooltip:\*\*** | attribute directive  Tooltip  + more variations
+@md**TooltipClass** | attribute directive  Tooltip class
+@md**TooltipHideDelay** | attribute directive  Tooltip hide delay
+@md**TooltipPosition** | attribute directive  Tooltip position
+@md**TooltipShowDelay** | attribute directive  Tooltip show delay
 
 
 ### Angular flex layout snippets
