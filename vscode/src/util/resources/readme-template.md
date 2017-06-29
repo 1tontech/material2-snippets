@@ -17,7 +17,7 @@ Suggestions, feedback and other comments welcome via [@1tontech](https://twitter
 Create a new HTML document and
 
 1. Type `md-` for all material components. Use `@md` for all material attribute directives. `md` comes from `material design`
-2. Type `@fx` for all material components. `fx` comes from `flex layout`
+2. Type `@fx` for all flex layout attribute directives. `fx` comes from `flex layout`
 3. Type `td-` for all teradata covalent components. Use `@td` for all teradata covalent attribute directives. `td` comes from `tera data` which is the company responsible for covalent development. `td` is quite similar to `md`
 
 `Ctrl+Space` will trigger autocomplete dialog for snippet selection
