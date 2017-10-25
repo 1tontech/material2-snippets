@@ -20,14 +20,14 @@ Suggestions, feedback and other comments welcome via [@1tontech](https://twitter
 
 Create a new HTML document and
 
-1. Type `md-` for all material components. Use `@md` for all material attribute directives. `md` comes from `material design`
+1. Type `mat-` for all material components. Use `@mat` for all material attribute directives. `mat` comes from `*mat*erial design`
 2. Type `@fx` for all flex layout attribute directives. `fx` comes from `flex layout`
-3. Type `td-` for all teradata covalent components. Use `@td` for all teradata covalent attribute directives. `td` comes from `tera data` which is the company responsible for covalent development. `td` is quite similar to `md`
+3. Type `td-` for all teradata covalent components. Use `@td` for all teradata covalent attribute directives. `td` comes from `tera data` which is the company responsible for covalent development
 
 `Ctrl+Space` will trigger autocomplete dialog. (or) Use `Ctrl+J` if you want autocomplete dialog to narrow down results to just live templates/snippets
 
-> 1. For autocompletion of components, use hyphen `-` format. i.e for material button, type `md-button`
-> 2. For autocompletion of attribute directives, use `@` format. i.e for flex layout, use `@fxLayout` (or) use `@mdTooltip` for material tooltip
+> 1. For autocompletion of components, use hyphen `-` format. i.e for material button, type `mat-button`
+> 2. For autocompletion of attribute directives, use `@` format. i.e for flex layout, use `@fxLayout` (or) use `@matTooltip` for material tooltip
 
 Here are the conventions that will make it easy to lookup templates
 

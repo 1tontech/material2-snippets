@@ -1,9 +1,10 @@
-<md-accordion displayMode="${1:default|flat}" [multi]="${2:true|false}" [hideToggle]="${3:false|true}">
-    <md-expansion-panel [hideToggle]="${4:false|true}">
-        <md-expansion-panel-header>${7:Panel header}</md-expansion-panel-header>
+<mat-accordion displayMode="${1:default|flat}" [multi]="${2:true|false}"
+               [hideToggle]="${3:false|true}">
+    <mat-expansion-panel [hideToggle]="${4:false|true}">
+        <mat-expansion-panel-header>${7:Panel header}</mat-expansion-panel-header>
         ${8: Panel body}$END$
-        <md-action-row>
-            <button md-button (click)="${6:onAction($event)}">${5:Action1}</button>
-        </md-action-row>
-    </md-expansion-panel>
-</md-accordion>
+        <mat-action-row>
+            <button mat-button (click)="${6:onAction($event)}">${5:Action1}</button>
+        </mat-action-row>
+    </mat-expansion-panel>
+</mat-accordion>

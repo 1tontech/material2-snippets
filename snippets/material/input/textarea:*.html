@@ -1,9 +1,10 @@
-<md-input-container floatPlaceholder="${6:auto|always|never}" dividerColor="${7:primary|accent|warn}">
-    <textarea mdInput [(ngModel)]="${1:modelName}" ${3:required}
+<mat-input-container floatPlaceholder="${6:auto|always|never}"
+                     dividerColor="${7:primary|accent|warn}">
+    <textarea matInput [(ngModel)]="${1:modelName}" ${3:required}
               placeholder="$2"></textarea>
-    <span mdPrefix>$4</span>
-    <span mdSuffix>$5</span>
-    <md-hint align="${9:start|end}">
+    <span matPrefix>$4</span>
+    <span matSuffix>$5</span>
+    <mat-hint align="${9:start|end}">
         ${8:Hint text}
-    </md-hint>
-</md-input-container>$END$
+    </mat-hint>
+</mat-input-container>$END$

@@ -31,7 +31,7 @@ class Generator {
 
         GeneratorMetadata metadata = GeneratorMetadata.builder().templateRootPath("${snippetsPath}/material")
                 .codePointVarString(codePointVarString)
-                .triggerNameGenerator({ String fileParent, String fileBaseName -> triggerName('md', fileParent, fileBaseName).name })
+                .triggerNameGenerator({ String fileParent, String fileBaseName -> triggerName('mat', fileParent, fileBaseName).name })
                 .descriptionGenerator({ String fileParent, String fileBaseName -> nameToDescription(fileParent, fileBaseName) })
                 .groupName('Material')
                 .snippetXmlPath("${resourcesPath}/material.xml")

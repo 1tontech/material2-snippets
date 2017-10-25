@@ -14,7 +14,7 @@ class ReadmeGenerator {
         IOUtils.copy(getClass().getResourceAsStream("/readme-template.md"), readmeContentWriter, defaultCharset())
         String readmeContent = readmeContentWriter.toString()
 
-        readmeContent = replacePlaceholderWithSnippets(readmeContent, /@@@GENERATED_MATERIAL_SNIPPETS@@@/, getSnippetResources("${snippetsPath}/material"), false, 'md')
+        readmeContent = replacePlaceholderWithSnippets(readmeContent, /@@@GENERATED_MATERIAL_SNIPPETS@@@/, getSnippetResources("${snippetsPath}/material"), false, 'mat')
         readmeContent = replacePlaceholderWithSnippets(readmeContent, /@@@GENERATED_COVALENT_SNIPPETS@@@/, getSnippetResources("${snippetsPath}/covalent"), false, 'td')
         readmeContent = replacePlaceholderWithSnippets(readmeContent, /@@@GENERATED_FLEX_SNIPPETS@@@/, getSnippetResources("${snippetsPath}/flex-layout"), true, 'fx')
 

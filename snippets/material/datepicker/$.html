@@ -1,8 +1,8 @@
-<md-input-container>
-    <input mdInput
+<mat-input-container>
+    <input matInput
            formControlName="${1:modelName}"
-           [mdDatepicker]="${2:datePickerRef}"
+           [matDatepicker]="${2:datePickerRef}"
            placeholder="$3">
-    <button mdSuffix [mdDatepickerToggle]="${2:datePickerRef}"></button>
-</md-input-container>
-<md-datepicker #${2:datePickerRef}></md-datepicker>
+    <button matSuffix [matDatepickerToggle]="${2:datePickerRef}"></button>
+</mat-input-container>
+<mat-datepicker #${2:datePickerRef}></mat-datepicker>

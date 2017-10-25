@@ -1,10 +1,11 @@
-<md-input-container floatPlaceholder="${87:always|never|auto}">
-    <input mdInput placeholder="$1" [mdAutocomplete]="${6:autocompleteTemplateRefId}"
+<mat-input-container floatPlaceholder="${87:always|never|auto}">
+    <input matInput placeholder="$1" [matAutocomplete]="${6:autocompleteTemplateRefId}"
            formControlName="${2:formControlName}">
-</md-input-container>
+</mat-input-container>
 
-<md-autocomplete #${6:autocompleteTemplateRefId}="mdAutocomplete" [displayWith]="${5:onSelectConvertValueToInputFn}">
-    <md-option *ngFor="let ${4:choice} of ${3:choices} | async" [value]="${4:choice}">
+<mat-autocomplete #${6:autocompleteTemplateRefId}="matAutocomplete"
+                  [displayWith]="${5:onSelectConvertValueToInputFn}">
+    <mat-option *ngFor="let ${4:choice} of ${3:choices} | async" [value]="${4:choice}">
         ${7:Choice shown in dropdown}
-    </md-option>
-</md-autocomplete>$END$
+    </mat-option>
+</mat-autocomplete>$END$

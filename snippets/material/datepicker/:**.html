@@ -1,16 +1,16 @@
-<md-input-container>
-    <input mdInput
+<mat-input-container>
+    <input matInput
            [(ngModel)]="${1:modelName}"
-           [mdDatepicker]="${2:datePickerRef}"
+           [matDatepicker]="${2:datePickerRef}"
            placeholder="$3"
            [min]="${4:minDate}"
            [max]="${5:maxDate}"
-           [mdDatepickerFilter]="${6:dateFilter}">
-    <button mdSuffix [mdDatepickerToggle]="${2:datePickerRef}"></button>
-</md-input-container>
-<md-datepicker
+           [matDatepickerFilter]="${6:dateFilter}">
+    <button matSuffix [matDatepickerToggle]="${2:datePickerRef}"></button>
+</mat-input-container>
+<mat-datepicker
         #${2:datePickerRef}
         (selectedChanged)="$7"
         [touchUi]="${8:isMobile}"
         [startAt]="${9:startDate}"
-        [startView]="${10:year|month}"></md-datepicker>
+        [startView]="${10:year|month}"></mat-datepicker>

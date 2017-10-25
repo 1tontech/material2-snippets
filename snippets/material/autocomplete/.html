@@ -1,10 +1,13 @@
-<md-input-container floatPlaceholder="${9:always|never|auto}">
-    <input mdInput placeholder="${1:placeholder}" [mdAutocomplete]="${7:autocompleteTemplateRefId}"
-           [(ngModel)]="${2:modelName}" (ngModelChange)="this.${3:choices} = ${5:filterChoices}(${2:modelName})">
-</md-input-container>
+<mat-input-container floatPlaceholder="${9:always|never|auto}">
+    <input matInput placeholder="${1:placeholder}"
+           [matAutocomplete]="${7:autocompleteTemplateRefId}"
+           [(ngModel)]="${2:modelName}"
+           (ngModelChange)="this.${3:choices} = ${5:filterChoices}(${2:modelName})">
+</mat-input-container>
 
-<md-autocomplete #${7:autocompleteTemplateRefId}="mdAutocomplete" [displayWith]="${6:onSelectConvertValueToInputFn}">
-    <md-option *ngFor="let ${4:choice} of ${3:choices}" [value]="${4:choice}">
+<mat-autocomplete #${7:autocompleteTemplateRefId}="matAutocomplete"
+                  [displayWith]="${6:onSelectConvertValueToInputFn}">
+    <mat-option *ngFor="let ${4:choice} of ${3:choices}" [value]="${4:choice}">
         ${8:Choice shown in dropdown}
-    </md-option>
-</md-autocomplete>$END$
+    </mat-option>
+</mat-autocomplete>$END$

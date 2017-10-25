@@ -4,7 +4,7 @@ dialog sample code in ts
 ---
 
 1. Get reference to dialog
-constructor(public dialog: MdDialog) {
+constructor(public dialog: MatDialog) {
 }
 
 2. Open the dialog like this
@@ -23,7 +23,7 @@ this.dialogRef = this.dialog.open(this.template, this.config);
 sample dialog config
 ---
 
-config: MdDialogConfig = {
+config: MatDialogConfig = {
     disableClose: false,
     hasBackdrop: true,
     backdropClass: '',
@@ -45,8 +45,8 @@ Receive data in the dialog
 
 export class CustomDialog {
   constructor(
-    private dialogRef: MdDialogRef<CustomDialog>,
-    @Inject(MD_DIALOG_DATA) public data: any) { }
+    private dialogRef: MatDialogRef<CustomDialog>,
+    @Inject(MAT_DIALOG_DATA) public data: any) { }
 }
 
 Send result back to dialog parent from dialog
@@ -54,8 +54,8 @@ Send result back to dialog parent from dialog
 
 export class CustomDialog {
   constructor(
-    private dialogRef: MdDialogRef<CustomDialog>,
-    @Inject(MD_DIALOG_DATA) public data: any) { }
+    private dialogRef: MatDialogRef<CustomDialog>,
+    @Inject(MAT_DIALOG_DATA) public data: any) { }
 
   sendDataToParent() {
     this.dialogRef.close(dataForParent);
@@ -66,7 +66,7 @@ export class CustomDialog {
 disable body level scrolling by subscribing to dialog event subscription
 ---
 
-dialog.afterOpen.subscribe((ref: MdDialogRef<any>) => {
+dialog.afterOpen.subscribe((ref: MatDialogRef<any>) => {
   if (!doc.body.classList.contains('no-scroll')) {
     doc.body.classList.add('no-scroll');
   }

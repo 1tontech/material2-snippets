@@ -5,12 +5,12 @@
     <td-layout-manage-list #{6:ref} [opened]="${7:media.registerQuery('gt-sm') | async}"
                            [mode]="${8:(media.registerQuery('gt-sm') | async) ? 'side' :  'over'}"
                            [sidenavWidth]="${9:(media.registerQuery('gt-xs') | async) ? '257px' : '100%'}">
-        <md-toolbar td-sidenav-content (click)="${10:!media.query('gt-sm') && ${6:ref}.close()}">
+        <mat-toolbar td-sidenav-content (click)="${10:!media.query('gt-sm') && ${6:ref}.close()}">
             ${11:Inner sidenav toolbar}
-        </md-toolbar>
-        <md-nav-list td-sidenav-content>
+        </mat-toolbar>
+        <mat-nav-list td-sidenav-content>
             ${12:Inner sidenav content}
-        </md-nav-list>
+        </mat-nav-list>
         <div td-toolbar-content>
             ${13:Inner toolbar for body}
         </div>

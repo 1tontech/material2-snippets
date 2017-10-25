@@ -1,9 +1,10 @@
-<button md-button [mdMenuTriggerFor]="${1:menuRef}">
+<button mat-button [matMenuTriggerFor]="${1:menuRef}">
     ${2:Trigger}
 </button>
 
-<md-menu #${1:menuRef}="mdMenu" x-position="${3:after|before}" y-position="${4:below|above}" [overlapTrigger]="${5:false|true}">
-    <button md-menu-item *ngFor="let ${7:item} of ${6:items}" (click)="$9">
+<mat-menu #${1:menuRef}="matMenu" x-position="${3:after|before}" y-position="${4:below|above}"
+          [overlapTrigger]="${5:false|true}">
+    <button mat-menu-item *ngFor="let ${7:item} of ${6:items}" (click)="$9">
         ${7:item}$8
     </button>
-</md-menu>$END$
+</mat-menu>$END$

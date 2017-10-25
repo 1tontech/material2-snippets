@@ -3,7 +3,7 @@ Visual studio code (vscode) plugin/extension containing snippets for Angular Mat
 
 This plugin works in both in the stable & the insiders build
 
-![Plugin in action](https://github.com/1tontech/material2-snippets/raw/vscode-0.10.0/vscode/help.gif)
+![Plugin in action](https://github.com/1tontech/material2-snippets/raw/vscode-0.12.0/vscode/help.gif)
 
 The detailed list of supported template triggers are listed [below](#documentation)
 
@@ -16,14 +16,14 @@ Suggestions, feedback and other comments welcome via [@1tontech](https://twitter
 
 Create a new HTML document and
 
-1. Type `md-` for all material components. Use `@md` for all material attribute directives. `md` comes from `material design`
-2. Type `@fx` for all material components. `fx` comes from `flex layout`
-3. Type `td-` for all teradata covalent components. Use `@td` for all teradata covalent attribute directives. `td` comes from `tera data` which is the company responsible for covalent development. `td` is quite similar to `md`
+1. Type `mat-` for all material components. Use `@mat` for all material attribute directives. `mat` comes from `*mat*erial design`
+2. Type `@fx` for all flex layout attribute directives. `fx` comes from `flex layout`
+3. Type `td-` for all teradata covalent components. Use `@td` for all teradata covalent attribute directives. `td` comes from `tera data` which is the company responsible for covalent development. `td` is quite similar to `mat`
 
 `Ctrl+Space` will trigger autocomplete dialog for snippet selection
 
-> 1. For autocompletion of components, use hyphen `-` format. i.e for material button, type `md-button`
-> 2. For autocompletion of attribute directives, use `@` format. i.e for flex layout, use `@fxLayout` (or) use `@mdTooltip` for material tooltip
+> 1. For autocompletion of components, use hyphen `-` format. i.e for material button, type `mat-button`
+> 2. For autocompletion of attribute directives, use `@` format. i.e for flex layout, use `@fxLayout` (or) use `@matTooltip` for material tooltip
 
 Here are the conventions that will make it easy to lookup templates
 
@@ -75,346 +75,346 @@ Here are available live templates
 
 Trigger | Description
 --- | ---
-md-**accordion** | Accordion
-md-**accordion-_expansion-panel-action** | Accordion expansion snippet panel action
-md-**accordion-_expansion-panel** | Accordion expansion snippet panel
-md-**accordion-_expansion-panel:action** | Accordion expansion snippet panel + action variation
+mat-**accordion** | Accordion
+mat-**accordion-_expansion-panel-action** | Accordion expansion snippet panel action
+mat-**accordion-_expansion-panel** | Accordion expansion snippet panel
+mat-**accordion-_expansion-panel:action** | Accordion expansion snippet panel + action variation
 
 #### Autocomplete
 
 Trigger | Description
 --- | ---
-md-**autocomplete$** | Reactive form variation of Autocomplete
-md-**autocomplete** | Autocomplete
+mat-**autocomplete$** | Reactive form variation of Autocomplete
+mat-**autocomplete** | Autocomplete
 
 #### Button toggle
 
 Trigger | Description
 --- | ---
-md-**button-toggle$-group-\*** | Reactive form variation of Button toggle group *forEach flavor
-md-**button-toggle$-group** | Reactive form variation of Button toggle group
-md-**button-toggle$** | Reactive form variation of Button toggle
-md-**button-toggle** | Button toggle
-md-**button-toggle-group-\*** | Button toggle group *forEach flavor
-md-**button-toggle-group** | Button toggle group
+mat-**button-toggle$-group-\*** | Reactive form variation of Button toggle group *forEach flavor
+mat-**button-toggle$-group** | Reactive form variation of Button toggle group
+mat-**button-toggle$** | Reactive form variation of Button toggle
+mat-**button-toggle** | Button toggle
+mat-**button-toggle-group-\*** | Button toggle group *forEach flavor
+mat-**button-toggle-group** | Button toggle group
 
 #### Button
 
 Trigger | Description
 --- | ---
-md-**button** | Button
-md-**button:color** | Button + color variation
-md-**button-a** | Button with link
-md-**button-a:color** | Button with link + color variation
-md-**button-fab-a** | Button fab with link
-md-**button-fab-a:color** | Button fab with link + color variation
-md-**button-fab** | Button fab
-md-**button-fab:color** | Button fab + color variation
-md-**button-icon-a** | Button icon with link
-md-**button-icon-a:color** | Button icon with link + color variation
-md-**button-icon** | Button icon
-md-**button-icon:color** | Button icon + color variation
-md-**button-mini-fab-a** | Button mini fab with link
-md-**button-mini-fab-a:color** | Button mini fab with link + color variation
-md-**button-mini-fab** | Button mini fab
-md-**button-mini-fab:color** | Button mini fab + color variation
-md-**button-raised-a** | Button raised with link
-md-**button-raised-a:color** | Button raised with link + color variation
-md-**button-raised** | Button raised
-md-**button-raised:color** | Button raised + color variation
+mat-**button** | Button
+mat-**button:color** | Button + color variation
+mat-**button-a** | Button with link
+mat-**button-a:color** | Button with link + color variation
+mat-**button-fab-a** | Button fab with link
+mat-**button-fab-a:color** | Button fab with link + color variation
+mat-**button-fab** | Button fab
+mat-**button-fab:color** | Button fab + color variation
+mat-**button-icon-a** | Button icon with link
+mat-**button-icon-a:color** | Button icon with link + color variation
+mat-**button-icon** | Button icon
+mat-**button-icon:color** | Button icon + color variation
+mat-**button-mini-fab-a** | Button mini fab with link
+mat-**button-mini-fab-a:color** | Button mini fab with link + color variation
+mat-**button-mini-fab** | Button mini fab
+mat-**button-mini-fab:color** | Button mini fab + color variation
+mat-**button-raised-a** | Button raised with link
+mat-**button-raised-a:color** | Button raised with link + color variation
+mat-**button-raised** | Button raised
+mat-**button-raised:color** | Button raised + color variation
 
 #### Card
 
 Trigger | Description
 --- | ---
-md-**card** | Card
-md-**card:avatar** | Card + avatar variation
-md-**card:title-group** | Card:title group
-@md**CardAvatar** | attribute directive  Card avatar
-@md**CardImageLarge** | attribute directive  Card image large
-@md**CardImageMedium** | attribute directive  Card image medium
-@md**CardImageSmall** | attribute directive  Card image small
-@md**CardImageXLarge** | attribute directive  Card image x large
-@md**CardImage** | attribute directive  Card image
-@md**CardSubTitle** | attribute directive  Card sub title
-@md**CardTitle** | attribute directive  Card title
+mat-**card** | Card
+mat-**card:avatar** | Card + avatar variation
+mat-**card:title-group** | Card:title group
+@mat**CardAvatar** | attribute directive  Card avatar
+@mat**CardImageLarge** | attribute directive  Card image large
+@mat**CardImageMedium** | attribute directive  Card image medium
+@mat**CardImageSmall** | attribute directive  Card image small
+@mat**CardImageXLarge** | attribute directive  Card image x large
+@mat**CardImage** | attribute directive  Card image
+@mat**CardSubTitle** | attribute directive  Card sub title
+@mat**CardTitle** | attribute directive  Card title
 
 #### Checkbox
 
 Trigger | Description
 --- | ---
-md-**checkbox$** | Reactive form variation of Checkbox
-md-**checkbox$:\*\*** | Reactive form variation of Checkbox + more variations
-md-**checkbox** | Checkbox
-md-**checkbox:\*\*** | Checkbox + more variations
+mat-**checkbox$** | Reactive form variation of Checkbox
+mat-**checkbox$:\*\*** | Reactive form variation of Checkbox + more variations
+mat-**checkbox** | Checkbox
+mat-**checkbox:\*\*** | Checkbox + more variations
 
 #### Chip
 
 Trigger | Description
 --- | ---
-md-**chip-\*** | Chip *forEach flavor
-md-**chip-\*:color** | Chip *forEach flavor + color variation
-md-**chip** | Chip
-md-**chip:color** | Chip + color variation
-md-**chip-basic** | Chip basic
+mat-**chip-\*** | Chip *forEach flavor
+mat-**chip-\*:color** | Chip *forEach flavor + color variation
+mat-**chip** | Chip
+mat-**chip:color** | Chip + color variation
+mat-**chip-basic** | Chip basic
 
 #### Datepicker
 
 Trigger | Description
 --- | ---
-md-**datepicker$-minmax** | Reactive form variation of Datepicker minmax
-md-**datepicker$** | Reactive form variation of Datepicker
-md-**datepicker$:\*\*** | Reactive form variation of Datepicker + more variations
-md-**datepicker** | Datepicker
-md-**datepicker:\*\*** | Datepicker + more variations
-md-**datepicker-minmax** | Datepicker minmax
+mat-**datepicker$-minmax** | Reactive form variation of Datepicker minmax
+mat-**datepicker$** | Reactive form variation of Datepicker
+mat-**datepicker$:\*\*** | Reactive form variation of Datepicker + more variations
+mat-**datepicker** | Datepicker
+mat-**datepicker:\*\*** | Datepicker + more variations
+mat-**datepicker-minmax** | Datepicker minmax
 
 #### Dialog
 
 Trigger | Description
 --- | ---
-md-**dialog** | Dialog
-md-**dialog:\*\*** | Dialog + more variations
-md-**dialog:?** | Dialog help
-@md**DialogActions** | attribute directive  Dialog actions
-@md**DialogClose** | attribute directive  Dialog close
-@md**DialogContent** | attribute directive  Dialog content
-@md**DialogTitle** | attribute directive  Dialog title
+mat-**dialog** | Dialog
+mat-**dialog:\*\*** | Dialog + more variations
+mat-**dialog:?** | Dialog help
+@mat**DialogActions** | attribute directive  Dialog actions
+@mat**DialogClose** | attribute directive  Dialog close
+@mat**DialogContent** | attribute directive  Dialog content
+@mat**DialogTitle** | attribute directive  Dialog title
 
 #### Divider
 
 Trigger | Description
 --- | ---
-md-**divider** | Divider
-md-**divider:inset** | Divider + inset variation
+mat-**divider** | Divider
+mat-**divider:inset** | Divider + inset variation
 
 #### Expansion
 
 Trigger | Description
 --- | ---
-md-**expansion** | Expansion
-md-**expansion:\*\*** | Expansion + more variations
+mat-**expansion** | Expansion
+mat-**expansion:\*\*** | Expansion + more variations
 
 #### Grid
 
 Trigger | Description
 --- | ---
-md-**grid-fit-\*** | Grid fit *forEach flavor
-md-**grid-fit-\*:footer** | Grid fit *forEach flavor + footer variation
-md-**grid-fit-\*:header** | Grid fit *forEach flavor + header variation
-md-**grid-fit** | Grid fit
-md-**grid-fit:footer** | Grid fit + footer variation
-md-**grid-fit:header** | Grid fit + header variation
-md-**grid-fixed-\*** | Grid fixed *forEach flavor
-md-**grid-fixed-\*:footer** | Grid fixed *forEach flavor + footer variation
-md-**grid-fixed-\*:header** | Grid fixed *forEach flavor + header variation
-md-**grid-fixed** | Grid fixed
-md-**grid-fixed:footer** | Grid fixed + footer variation
-md-**grid-fixed:header** | Grid fixed + header variation
-md-**grid-ratio-\*** | Grid ratio *forEach flavor
-md-**grid-ratio-\*:footer** | Grid ratio *forEach flavor + footer variation
-md-**grid-ratio-\*:header** | Grid ratio *forEach flavor + header variation
-md-**grid-ratio** | Grid ratio
-md-**grid-ratio:footer** | Grid ratio + footer variation
-md-**grid-ratio:header** | Grid ratio + header variation
+mat-**grid-fit-\*** | Grid fit *forEach flavor
+mat-**grid-fit-\*:footer** | Grid fit *forEach flavor + footer variation
+mat-**grid-fit-\*:header** | Grid fit *forEach flavor + header variation
+mat-**grid-fit** | Grid fit
+mat-**grid-fit:footer** | Grid fit + footer variation
+mat-**grid-fit:header** | Grid fit + header variation
+mat-**grid-fixed-\*** | Grid fixed *forEach flavor
+mat-**grid-fixed-\*:footer** | Grid fixed *forEach flavor + footer variation
+mat-**grid-fixed-\*:header** | Grid fixed *forEach flavor + header variation
+mat-**grid-fixed** | Grid fixed
+mat-**grid-fixed:footer** | Grid fixed + footer variation
+mat-**grid-fixed:header** | Grid fixed + header variation
+mat-**grid-ratio-\*** | Grid ratio *forEach flavor
+mat-**grid-ratio-\*:footer** | Grid ratio *forEach flavor + footer variation
+mat-**grid-ratio-\*:header** | Grid ratio *forEach flavor + header variation
+mat-**grid-ratio** | Grid ratio
+mat-**grid-ratio:footer** | Grid ratio + footer variation
+mat-**grid-ratio:header** | Grid ratio + header variation
 
 #### Icon
 
 Trigger | Description
 --- | ---
-md-**icon** | Icon
-md-**icon:color** | Icon + color variation
-md-**icon-font** | Icon font
-md-**icon-svg-set** | Icon svg set
-md-**icon-svg** | Icon svg
+mat-**icon** | Icon
+mat-**icon:color** | Icon + color variation
+mat-**icon-font** | Icon font
+mat-**icon-svg-set** | Icon svg set
+mat-**icon-svg** | Icon svg
 
 #### Input
 
 Trigger | Description
 --- | ---
-md-**input$-counting** | Reactive form variation of Input counting
-md-**input$-prefix** | Reactive form variation of Input prefix
-md-**input$-sufix** | Reactive form variation of Input sufix
-md-**input$-textarea-auto-expand** | Reactive form variation of Input textarea auto expand
-md-**input$-textarea-counting** | Reactive form variation of Input textarea counting
-md-**input$-textarea-prefix** | Reactive form variation of Input textarea prefix
-md-**input$-textarea-sufix** | Reactive form variation of Input textarea sufix
-md-**input$-textarea** | Reactive form variation of Input textarea
-md-**input$-textarea:\*** | Reactive form variation of Input textarea:*
-md-**input$-textarea:color** | Reactive form variation of Input textarea + color variation
-md-**input$** | Reactive form variation of Input
-md-**input$:\*\*** | Reactive form variation of Input + more variations
-md-**input$:color** | Reactive form variation of Input + color variation
-md-**input** | Input
-md-**input:\*\*** | Input + more variations
-md-**input:color** | Input + color variation
-md-**input-_error** | Input error snippet
-md-**input-counting** | Input counting
-md-**input-prefix** | Input prefix
-md-**input-sufix** | Input sufix
-md-**input-textarea-auto-expand** | Input textarea auto expand
-md-**input-textarea-counting** | Input textarea counting
-md-**input-textarea-prefix** | Input textarea prefix
-md-**input-textarea-sufix** | Input textarea sufix
-md-**input-textarea** | Input textarea
-md-**input-textarea:\*** | Input textarea:*
-md-**input-textarea:color** | Input textarea + color variation
+mat-**input$-counting** | Reactive form variation of Input counting
+mat-**input$-prefix** | Reactive form variation of Input prefix
+mat-**input$-sufix** | Reactive form variation of Input sufix
+mat-**input$-textarea-auto-expand** | Reactive form variation of Input textarea auto expand
+mat-**input$-textarea-counting** | Reactive form variation of Input textarea counting
+mat-**input$-textarea-prefix** | Reactive form variation of Input textarea prefix
+mat-**input$-textarea-sufix** | Reactive form variation of Input textarea sufix
+mat-**input$-textarea** | Reactive form variation of Input textarea
+mat-**input$-textarea:\*** | Reactive form variation of Input textarea:*
+mat-**input$-textarea:color** | Reactive form variation of Input textarea + color variation
+mat-**input$** | Reactive form variation of Input
+mat-**input$:\*\*** | Reactive form variation of Input + more variations
+mat-**input$:color** | Reactive form variation of Input + color variation
+mat-**input** | Input
+mat-**input:\*\*** | Input + more variations
+mat-**input:color** | Input + color variation
+mat-**input-_error** | Input error snippet
+mat-**input-counting** | Input counting
+mat-**input-prefix** | Input prefix
+mat-**input-sufix** | Input sufix
+mat-**input-textarea-auto-expand** | Input textarea auto expand
+mat-**input-textarea-counting** | Input textarea counting
+mat-**input-textarea-prefix** | Input textarea prefix
+mat-**input-textarea-sufix** | Input textarea sufix
+mat-**input-textarea** | Input textarea
+mat-**input-textarea:\*** | Input textarea:*
+mat-**input-textarea:color** | Input textarea + color variation
 
 #### Line
 
 Trigger | Description
 --- | ---
-@md**Line** | attribute directive  Line
+@mat**Line** | attribute directive  Line
 
 #### List
 
 Trigger | Description
 --- | ---
-md-**list-\*** | List *forEach flavor
-md-**list** | List
-md-**list:\*\*** | List + more variations
-@md**ListIcon** | attribute directive  List icon
-md-**list-_avatar** | List avatar snippet
-md-**list-_header** | List header snippet
-md-**list-_icon** | List icon snippet
-md-**list-_icon:color** | List icon snippet + color variation
-md-**list-_line** | List line snippet
-md-**list-_line:a** | List line snippet + a variation
-md-**list-nav-\*** | List nav *forEach flavor
-md-**list-nav-complex-\*** | List nav complex *forEach flavor
-md-**list-nav-complex** | List nav complex
-md-**list-nav** | List nav
-md-**list-nav:\*\*** | List nav + more variations
+mat-**list-\*** | List *forEach flavor
+mat-**list** | List
+mat-**list:\*\*** | List + more variations
+@mat**ListIcon** | attribute directive  List icon
+mat-**list-_avatar** | List avatar snippet
+mat-**list-_header** | List header snippet
+mat-**list-_icon** | List icon snippet
+mat-**list-_icon:color** | List icon snippet + color variation
+mat-**list-_line** | List line snippet
+mat-**list-_line:a** | List line snippet + a variation
+mat-**list-nav-\*** | List nav *forEach flavor
+mat-**list-nav-complex-\*** | List nav complex *forEach flavor
+mat-**list-nav-complex** | List nav complex
+mat-**list-nav** | List nav
+mat-**list-nav:\*\*** | List nav + more variations
 
 #### Menu
 
 Trigger | Description
 --- | ---
-md-**menu-\*** | Menu *forEach flavor
-md-**menu-\*:\*\*** | Menu *forEach flavor + more variations
-md-**menu** | Menu
-md-**menu:\*\*** | Menu + more variations
-md-**menu:?** | Menu help
-md-**menu-a-\*** | Menu with link *forEach flavor
-md-**menu-a-\*:\*\*** | Menu with link *forEach flavor + more variations
-md-**menu-a** | Menu with link
-md-**menu-a:\*\*** | Menu with link + more variations
+mat-**menu-\*** | Menu *forEach flavor
+mat-**menu-\*:\*\*** | Menu *forEach flavor + more variations
+mat-**menu** | Menu
+mat-**menu:\*\*** | Menu + more variations
+mat-**menu:?** | Menu help
+mat-**menu-a-\*** | Menu with link *forEach flavor
+mat-**menu-a-\*:\*\*** | Menu with link *forEach flavor + more variations
+mat-**menu-a** | Menu with link
+mat-**menu-a:\*\*** | Menu with link + more variations
 
 #### Progress bar
 
 Trigger | Description
 --- | ---
-md-**progress-bar-buffer** | Progress bar buffer
-md-**progress-bar-determinate** | Progress bar determinate
-md-**progress-bar-indeterminate** | Progress bar indeterminate
-md-**progress-bar-query** | Progress bar query
+mat-**progress-bar-buffer** | Progress bar buffer
+mat-**progress-bar-determinate** | Progress bar determinate
+mat-**progress-bar-indeterminate** | Progress bar indeterminate
+mat-**progress-bar-query** | Progress bar query
 
 #### Progress spinner
 
 Trigger | Description
 --- | ---
-md-**progress-spinner-determinate** | Progress spinner determinate
-md-**progress-spinner-determinate:\*\*** | Progress spinner determinate + more variations
-md-**progress-spinner-indeterminate** | Progress spinner indeterminate
-md-**progress-spinner-indeterminate:\*\*** | Progress spinner indeterminate + more variations
+mat-**progress-spinner-determinate** | Progress spinner determinate
+mat-**progress-spinner-determinate:\*\*** | Progress spinner determinate + more variations
+mat-**progress-spinner-indeterminate** | Progress spinner indeterminate
+mat-**progress-spinner-indeterminate:\*\*** | Progress spinner indeterminate + more variations
 
 #### Radio
 
 Trigger | Description
 --- | ---
-md-**radio$-group-\*** | Reactive form variation of Radio group *forEach flavor
-md-**radio$-group** | Reactive form variation of Radio group
-md-**radio$** | Reactive form variation of Radio
-md-**radio** | Radio
-md-**radio-group-\*** | Radio group *forEach flavor
-md-**radio-group** | Radio group
+mat-**radio$-group-\*** | Reactive form variation of Radio group *forEach flavor
+mat-**radio$-group** | Reactive form variation of Radio group
+mat-**radio$** | Reactive form variation of Radio
+mat-**radio** | Radio
+mat-**radio-group-\*** | Radio group *forEach flavor
+mat-**radio-group** | Radio group
 
 #### Ripple
 
 Trigger | Description
 --- | ---
-@md**Ripple:disable** | attribute directive  Ripple  + disable variation
+@mat**Ripple:disable** | attribute directive  Ripple  + disable variation
 
 #### Select
 
 Trigger | Description
 --- | ---
-md-**select$-\*** | Reactive form variation of Select *forEach flavor
-md-**select$-\*:\*\*** | Reactive form variation of Select *forEach flavor + more variations
-md-**select$-multiple-\*** | Reactive form variation of Select multiple *forEach flavor
-md-**select$-multiple-\*:\*\*** | Reactive form variation of Select multiple *forEach flavor + more variations
-md-**select$-multiple** | Reactive form variation of Select multiple
-md-**select$-optgroups-\*** | Reactive form variation of Select optgroups *forEach flavor
-md-**select$-optgroups-\*:\*\*** | Reactive form variation of Select optgroups *forEach flavor + more variations
-md-**select$** | Reactive form variation of Select
-md-**select-\*** | Select *forEach flavor
-md-**select-\*:\*\*** | Select *forEach flavor + more variations
-md-**select** | Select
-md-**select-multiple-\*** | Select multiple *forEach flavor
-md-**select-multiple-\*:\*\*** | Select multiple *forEach flavor + more variations
-md-**select-multiple** | Select multiple
-md-**select-optgroups-\*** | Select optgroups *forEach flavor
-md-**select-optgroups-\*:\*\*** | Select optgroups *forEach flavor + more variations
+mat-**select$-\*** | Reactive form variation of Select *forEach flavor
+mat-**select$-\*:\*\*** | Reactive form variation of Select *forEach flavor + more variations
+mat-**select$-multiple-\*** | Reactive form variation of Select multiple *forEach flavor
+mat-**select$-multiple-\*:\*\*** | Reactive form variation of Select multiple *forEach flavor + more variations
+mat-**select$-multiple** | Reactive form variation of Select multiple
+mat-**select$-optgroups-\*** | Reactive form variation of Select optgroups *forEach flavor
+mat-**select$-optgroups-\*:\*\*** | Reactive form variation of Select optgroups *forEach flavor + more variations
+mat-**select$** | Reactive form variation of Select
+mat-**select-\*** | Select *forEach flavor
+mat-**select-\*:\*\*** | Select *forEach flavor + more variations
+mat-**select** | Select
+mat-**select-multiple-\*** | Select multiple *forEach flavor
+mat-**select-multiple-\*:\*\*** | Select multiple *forEach flavor + more variations
+mat-**select-multiple** | Select multiple
+mat-**select-optgroups-\*** | Select optgroups *forEach flavor
+mat-**select-optgroups-\*:\*\*** | Select optgroups *forEach flavor + more variations
 
 #### Sidenav
 
 Trigger | Description
 --- | ---
-md-**sidenav** | Sidenav
-md-**sidenav:\*\*** | Sidenav + more variations
-md-**sidenav:both** | Sidenav + both variation
-md-**sidenav-fab** | Sidenav fab
-md-**sidenav-fab:\*\*** | Sidenav fab + more variations
-md-**sidenav-fab:both** | Sidenav fab + both variation
+mat-**sidenav** | Sidenav
+mat-**sidenav:\*\*** | Sidenav + more variations
+mat-**sidenav:both** | Sidenav + both variation
+mat-**sidenav-fab** | Sidenav fab
+mat-**sidenav-fab:\*\*** | Sidenav fab + more variations
+mat-**sidenav-fab:both** | Sidenav fab + both variation
 
 #### Slide toggle
 
 Trigger | Description
 --- | ---
-md-**slide-toggle$** | Reactive form variation of Slide toggle
-md-**slide-toggle** | Slide toggle
+mat-**slide-toggle$** | Reactive form variation of Slide toggle
+mat-**slide-toggle** | Slide toggle
 
 #### Slider
 
 Trigger | Description
 --- | ---
-md-**slider$** | Reactive form variation of Slider
-md-**slider$:\*\*** | Reactive form variation of Slider + more variations
-md-**slider** | Slider
-md-**slider:\*\*** | Slider + more variations
+mat-**slider$** | Reactive form variation of Slider
+mat-**slider$:\*\*** | Reactive form variation of Slider + more variations
+mat-**slider** | Slider
+mat-**slider:\*\*** | Slider + more variations
 
 #### Tab
 
 Trigger | Description
 --- | ---
-md-**tab-\*** | Tab *forEach flavor
-md-**tab** | Tab
-@md**TabLabel** | attribute directive  Tab label
-@md**TabLink** | attribute directive  Tab link
-md-**tab-nav-\*** | Tab nav *forEach flavor
-md-**tab-nav** | Tab nav
-md-**tab-rich-\*** | Tab rich *forEach flavor
-md-**tab-rich** | Tab rich
+mat-**tab-\*** | Tab *forEach flavor
+mat-**tab** | Tab
+@mat**TabLabel** | attribute directive  Tab label
+@mat**TabLink** | attribute directive  Tab link
+mat-**tab-nav-\*** | Tab nav *forEach flavor
+mat-**tab-nav** | Tab nav
+mat-**tab-rich-\*** | Tab rich *forEach flavor
+mat-**tab-rich** | Tab rich
 
 #### Toolbar
 
 Trigger | Description
 --- | ---
-md-**toolbar** | Toolbar
-md-**toolbar:color** | Toolbar + color variation
-md-**toolbar-rows** | Toolbar rows
-md-**toolbar-rows:color** | Toolbar rows + color variation
+mat-**toolbar** | Toolbar
+mat-**toolbar:color** | Toolbar + color variation
+mat-**toolbar-rows** | Toolbar rows
+mat-**toolbar-rows:color** | Toolbar rows + color variation
 
 #### Tooltip
 
 Trigger | Description
 --- | ---
-@md**Tooltip** | attribute directive  Tooltip
-@md**Tooltip:\*\*** | attribute directive  Tooltip  + more variations
-@md**TooltipClass** | attribute directive  Tooltip class
-@md**TooltipHideDelay** | attribute directive  Tooltip hide delay
-@md**TooltipPosition** | attribute directive  Tooltip position
-@md**TooltipShowDelay** | attribute directive  Tooltip show delay
+@mat**Tooltip** | attribute directive  Tooltip
+@mat**Tooltip:\*\*** | attribute directive  Tooltip  + more variations
+@mat**TooltipClass** | attribute directive  Tooltip class
+@mat**TooltipHideDelay** | attribute directive  Tooltip hide delay
+@mat**TooltipPosition** | attribute directive  Tooltip position
+@mat**TooltipShowDelay** | attribute directive  Tooltip show delay
 
 
 ### Angular flex layout snippets

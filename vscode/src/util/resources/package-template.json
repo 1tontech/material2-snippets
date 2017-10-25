@@ -2,7 +2,7 @@
   "name": "angular-material",
   "displayName": "Angular Material 2, Flex layout 1, Covalent 1 & Material icon snippets",
   "description": "Providers snippets Angular Material 2, Angular Flex layout 1, Teradata Covalent 1 & Material icons",
-  "icon": "angular.svg",
+  "icon": "angular_128px.png",
   "version": "@@@VERSION@@@",
   "publisher": "1tontech",
   "license": "See License section in README.md",

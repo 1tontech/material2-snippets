@@ -1,10 +1,11 @@
-<${2:h1|h2|h3|h4|h5|h6} mdDialogTitle>${1:Title}</${2:h1|h2|h3|h4|h5|h6}>
+<${2:h1|h2|h3|h4|h5|h6} matDialogTitle>${1:Title}</${2:h1|h2|h3|h4|h5|h6}>
 
-<md-dialog-content>
+<mat-dialog-content>
     ${3:Dialog content}
-</md-dialog-content>
+</mat-dialog-content>
 
-<md-dialog-actions [attr.align]="${4:start|end|center}">
-    <button md-button mdDialogClose>${5:Close dialog}</button>
-    <button md-button>${6:Action}</button>$END$
-</md-dialog-actions>
+<mat-dialog-actions [attr.align]="${4:start|end|center}">
+    <button mat-button matDialogClose>${5:Close dialog}</button>
+    <button mat-button>${6:Action}</button>
+    $END$
+</mat-dialog-actions>

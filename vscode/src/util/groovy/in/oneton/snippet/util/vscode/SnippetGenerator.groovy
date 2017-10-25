@@ -17,7 +17,7 @@ class SnippetGenerator {
         Map<String, Snippet> descriptionToSnippet = new LinkedHashMap<>()
 
         GeneratorMetadata metadata = GeneratorMetadata.builder().templateRootPath("${snippetsPath}/material")
-                .triggerNameGenerator({ String fileParent, String fileBaseName -> triggerName('md', fileParent, fileBaseName).name })
+                .triggerNameGenerator({ String fileParent, String fileBaseName -> triggerName('mat', fileParent, fileBaseName).name })
                 .descriptionGenerator({ String fileParent, String fileBaseName -> nameToDescription(fileParent, fileBaseName) })
                 .build()
         generateFromMetadata(descriptionToSnippet, metadata)
@@ -73,6 +73,7 @@ class SnippetGenerator {
 
             triggerPattern = metadata.triggerNameGenerator.transform(fileParent, fileBaseName)
             templateStr = contentUntouched.trim().replaceAll("\\\$END\\\$", '\\\$0')
+                    .replaceAll(/\$\{(\d+):((?=([^}]+?\|)+[^}]+?)([^}]+?\|)+[^}]+?)\}/) { matches -> "\${${matches[1]}|${matches[2].replaceAll(/\|/, ',')}|}" } // converting ${3:primary|accent|warn} => ${3|primary,accent,warn|} which is vscode format for choices
             helpMsg = metadata.descriptionGenerator.transform(fileParent, fileBaseName)
 
             def snippet = Snippet.builder().prefix(triggerPattern).body(templateStr).description(helpMsg).scope('').build()
