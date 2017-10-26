@@ -1,3 +1,7 @@
+### Since 0.11.0 (25 Oct 2017):
+
+  - Changed all triggers from `md` to `mat`
+
 ### Since 0.10.0 (23 Jun 2017):
 
   - Added support for new `accordion` & `expansion` material components

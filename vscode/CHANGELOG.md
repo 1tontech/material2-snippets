@@ -1,4 +1,4 @@
-### Since 0.12.0 (25 Oct 2017):
+### Since 0.13.0 (25 Oct 2017):
 
   - Changed help animation
 
