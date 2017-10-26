@@ -5,6 +5,8 @@ import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlProperty
 import groovy.transform.builder.Builder
 import in.oneton.snippet.util.Match
 
+import static java.lang.String.valueOf
+
 @Builder
 class Template {
     @JacksonXmlProperty(isAttribute = true)
@@ -37,8 +39,8 @@ class TemplateVariable {
     boolean alwaysStopAt
 
     static TemplateVariable from(Match match, String codePointVarString) {
-        def builder = TemplateVariable.builder()
-                .name(String.valueOf(match.index))
+        def builder = builder()
+                .name(valueOf(match.index))
                 .alwaysStopAt(true)
         String suggestion = match.suggestion
         if (suggestion) {
@@ -63,12 +65,12 @@ class TemplateVariable {
 class ContextOption {
 
     static final List<ContextOption> ALL = Collections.unmodifiableList(Arrays.asList(
-        ContextOption.builder().name("HTML_TEXT").value(true).build(),
-        ContextOption.builder().name("HTML").value(true).build(),
-        ContextOption.builder().name("PHP").value(true).build(),
-        ContextOption.builder().name("GSP").value(true).build(),
-        ContextOption.builder().name("JSP").value(true).build(),
-        ContextOption.builder().name("JSX_HTML").value(true).build()
+            builder().name("HTML_TEXT").value(true).build(),
+            builder().name("HTML").value(true).build(),
+            builder().name("PHP").value(true).build(),
+            builder().name("GSP").value(true).build(),
+            builder().name("JSP").value(true).build(),
+            builder().name("JSX_HTML").value(true).build()
     ))
 
     @JacksonXmlProperty(isAttribute = true)

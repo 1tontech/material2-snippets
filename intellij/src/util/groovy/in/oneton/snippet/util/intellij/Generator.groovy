@@ -4,9 +4,7 @@ import com.fasterxml.jackson.dataformat.xml.XmlMapper
 import in.oneton.snippet.util.Match
 
 import static com.fasterxml.jackson.databind.SerializationFeature.INDENT_OUTPUT
-import static in.oneton.snippet.util.Util.getSnippetResources
-import static in.oneton.snippet.util.Util.nameToDescription
-import static in.oneton.snippet.util.Util.triggerName
+import static in.oneton.snippet.util.Util.*
 import static java.util.regex.Pattern.compile
 import static java.util.stream.Collectors.toList
 
@@ -15,7 +13,7 @@ class Generator {
     static LONG_FORM_PATTERN = compile(/\$\s*\{\s*(\d+)\s*:\s*([^}]*)\s*}/)
     static SHORT_FORM_PATTERN = compile(/\$\s*(\d+)/)
 
-    void generateAll() {
+    static void generateAll() {
         String resourcesPath = 'src/main/resources'
         String snippetsPath = '../snippets'
 
@@ -60,7 +58,7 @@ class Generator {
         println "Regenerated flex layout template file. Saved to ${snippetXml.absolutePath}"
     }
 
-    private File generateFromMetadata(GeneratorMetadata metadata) {
+    private static File generateFromMetadata(GeneratorMetadata metadata) {
         List<Template> templates = new ArrayList<>()
 
         getSnippetResources(metadata.templateRootPath).forEach({ File snippetResource ->
@@ -98,7 +96,7 @@ class Generator {
         return file
     }
 
-    private String replaceWithVarFormat(String text, int index) {
+    private static String replaceWithVarFormat(String text, int index) {
         String modifiedText = replaceWithVarFormat(text, index, true)
         if (modifiedText == text) {
             return replaceWithVarFormat(text, index, false)
@@ -106,23 +104,23 @@ class Generator {
         return modifiedText
     }
 
-    private String replaceWithVarFormat(String text, int index, boolean longForm) {
+    private static String replaceWithVarFormat(String text, int index, boolean longForm) {
         if (longForm) {
             def pattern = compile(/\$\s*\{\s*/ + index + /\s*:\s*([^}]*)\s*}/)
             return text.replaceAll(pattern, /\$/ + index + /\$/)
         } else {
-            def pattern = compile(/\$\s*/+index)
+            def pattern = compile(/\$\s*/ + index)
             return text.replaceAll(pattern, /\$/ + index + /\$/)
         }
     }
 
-    private Set<Match> parseAndGetMatches(String text) {
+    private static Set<Match> parseAndGetMatches(String text) {
         def matches = parseAndGetMatches(text, true)
         matches.addAll(parseAndGetMatches(text, false))
         return matches
     }
 
-    private Set<Match> parseAndGetMatches(String text, boolean longForm) {
+    private static Set<Match> parseAndGetMatches(String text, boolean longForm) {
         Set<Match> matches = new TreeSet<>()
         if (longForm) {
             def matcher = LONG_FORM_PATTERN.matcher(text)

@@ -1,5 +1,9 @@
 ### Since 0.12.0 (25 Oct 2017):
 
+  - Changed help animation
+
+### Since 0.12.0 (25 Oct 2017):
+
   - Changed all triggers from `md` to `mat`
 
 ### Since 0.11.0 (24 Jun 2017):
